@@ -49,7 +49,7 @@ F0 "xbee_breakout" 50
 F1 "xbee-breakout.sch" 50
 $EndSheet
 $Sheet
-S 6650 4750 1350 650 
+S 750  6100 1350 650 
 U 5BE1F523
 F0 "FT231X_breakout" 50
 F1 "FT231X_breakout.sch" 50
