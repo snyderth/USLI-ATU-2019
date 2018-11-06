@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:ATU-2019-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -14,382 +15,43 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RF_ZigBee:XBee_SMT U1
-U 1 1 5BE062A2
-P 3300 2650
-F 0 "U1" H 3300 3828 50  0000 C CNN
-F 1 "XBee_SMT" H 3300 3737 50  0000 C CNN
-F 2 "RF_Module:Digi_XBee_SMT" H 4140 1590 50  0001 C CNN
-F 3 "http://www.digi.com/resources/documentation/digidocs/pdfs/90002126.pdf" H 3300 2250 50  0001 C CNN
-	1    3300 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LM1085-5.0 U2
-U 1 1 5BE065E0
-P 5450 1400
-F 0 "U2" H 5450 1642 50  0000 C CNN
-F 1 "LM1085-5.0" H 5450 1551 50  0000 C CNN
-F 2 "" H 5450 1650 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 5450 1400 50  0001 C CNN
-	1    5450 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LM1085-3.3 U3
-U 1 1 5BE066BE
-P 1350 1100
-F 0 "U3" H 1350 1342 50  0000 C CNN
-F 1 "XBEE_3.3v_supply" H 1350 1251 50  0000 C CNN
-F 2 "" H 1350 1350 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 1350 1100 50  0001 C CNN
-	1    1350 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LM1085-3.3 U4
-U 1 1 5BE0670E
-P 9900 1500
-F 0 "U4" H 9900 1742 50  0000 C CNN
-F 1 "FT231XS_3V3_Supply" H 9900 1651 50  0000 C CNN
-F 2 "" H 9900 1750 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 9900 1500 50  0001 C CNN
-	1    9900 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:LM1085-3.3 U5
 U 1 1 5BE06742
-P 5700 4750
-F 0 "U5" H 5700 4992 50  0000 C CNN
-F 1 "GPS_3V3_Supply" H 5700 4901 50  0000 C CNN
-F 2 "" H 5700 5000 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 5700 4750 50  0001 C CNN
-	1    5700 4750
+P 6450 2800
+F 0 "U5" H 6450 3042 50  0000 C CNN
+F 1 "GPS_3V3_Supply" H 6450 2951 50  0000 C CNN
+F 2 "" H 6450 3050 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 6450 2800 50  0001 C CNN
+	1    6450 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5BE0696E
-P 1350 1400
-F 0 "#PWR?" H 1350 1150 50  0001 C CNN
-F 1 "GND" H 1355 1227 50  0000 C CNN
-F 2 "" H 1350 1400 50  0001 C CNN
-F 3 "" H 1350 1400 50  0001 C CNN
-	1    1350 1400
+L Regulator_Linear:LM1085-3.3 U7
+U 1 1 5BE16E97
+P 6950 1400
+F 0 "U7" H 6950 1642 50  0000 C CNN
+F 1 "Sensor_3V3_Supply" H 6950 1551 50  0000 C CNN
+F 2 "" H 6950 1650 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 6950 1400 50  0001 C CNN
+	1    6950 1400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Interface_USB:FT231XS U6
-U 1 1 5BE06AA3
-P 9600 3450
-F 0 "U6" H 9600 4528 50  0000 C CNN
-F 1 "FT231XS" H 9600 4437 50  0000 C CNN
-F 2 "Package_SO:SSOP-20_3.9x8.7mm_P0.635mm" H 10200 2500 50  0001 C CNN
-F 3 "http://www.ftdichip.com/Products/ICs/FT231X.html" H 9600 3450 50  0001 C CNN
-	1    9600 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5BE06D5A
-P 9600 1500
-F 0 "#PWR?" H 9600 1350 50  0001 C CNN
-F 1 "VCC" V 9618 1627 50  0000 L CNN
-F 2 "" H 9600 1500 50  0001 C CNN
-F 3 "" H 9600 1500 50  0001 C CNN
-	1    9600 1500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BE06DC6
-P 9900 1800
-F 0 "#PWR?" H 9900 1550 50  0001 C CNN
-F 1 "GND" H 9905 1627 50  0000 C CNN
-F 2 "" H 9900 1800 50  0001 C CNN
-F 3 "" H 9900 1800 50  0001 C CNN
-	1    9900 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10200 1500 10300 1500
-Text GLabel 10450 1500 2    50   Input ~ 0
-FT231X_VCC
-Text GLabel 9500 2200 1    50   Input ~ 0
-FT231X_VCC
-$Comp
-L Connector:USB_B_Micro J1
-U 1 1 5BE06FF2
-P 9800 5200
-F 0 "J1" H 9855 5667 50  0000 C CNN
-F 1 "FT231X_USB" H 9855 5576 50  0000 C CNN
-F 2 "" H 9950 5150 50  0001 C CNN
-F 3 "~" H 9950 5150 50  0001 C CNN
-	1    9800 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 5600 9800 5600
-$Comp
-L power:GND #PWR?
-U 1 1 5BE07412
-P 9800 5600
-F 0 "#PWR?" H 9800 5350 50  0001 C CNN
-F 1 "GND" H 9805 5427 50  0000 C CNN
-F 2 "" H 9800 5600 50  0001 C CNN
-F 3 "" H 9800 5600 50  0001 C CNN
-	1    9800 5600
-	1    0    0    -1  
-$EndComp
-Connection ~ 9800 5600
-$Comp
-L Device:R_US R1
-U 1 1 5BE0758E
-P 10400 5200
-F 0 "R1" V 10195 5200 50  0000 C CNN
-F 1 "27" V 10286 5200 50  0000 C CNN
-F 2 "" V 10440 5190 50  0001 C CNN
-F 3 "~" H 10400 5200 50  0001 C CNN
-	1    10400 5200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R2
-U 1 1 5BE0764B
-P 10400 5300
-F 0 "R2" V 10605 5300 50  0000 C CNN
-F 1 "27" V 10514 5300 50  0000 C CNN
-F 2 "" V 10440 5290 50  0001 C CNN
-F 3 "~" H 10400 5300 50  0001 C CNN
-	1    10400 5300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10100 5200 10200 5200
-Wire Wire Line
-	10550 5200 10800 5200
-Wire Wire Line
-	10100 5300 10250 5300
-Wire Wire Line
-	10550 5300 10800 5300
-$Comp
-L Device:C C1
-U 1 1 5BE07E22
-P 10250 5900
-F 0 "C1" H 10365 5946 50  0000 L CNN
-F 1 "47pF" H 10365 5855 50  0000 L CNN
-F 2 "" H 10288 5750 50  0001 C CNN
-F 3 "~" H 10250 5900 50  0001 C CNN
-	1    10250 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5BE07EA4
-P 9950 6200
-F 0 "C2" H 10065 6246 50  0000 L CNN
-F 1 "47pF" H 10065 6155 50  0000 L CNN
-F 2 "" H 9988 6050 50  0001 C CNN
-F 3 "~" H 9950 6200 50  0001 C CNN
-	1    9950 6200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 6050 9950 5600
-Wire Wire Line
-	9950 5600 10200 5600
-Wire Wire Line
-	10200 5600 10200 5200
-Connection ~ 10200 5200
-Wire Wire Line
-	10200 5200 10250 5200
-$Comp
-L power:GND #PWR?
-U 1 1 5BE08098
-P 9950 6350
-F 0 "#PWR?" H 9950 6100 50  0001 C CNN
-F 1 "GND" H 9955 6177 50  0000 C CNN
-F 2 "" H 9950 6350 50  0001 C CNN
-F 3 "" H 9950 6350 50  0001 C CNN
-	1    9950 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BE080C0
-P 10250 6050
-F 0 "#PWR?" H 10250 5800 50  0001 C CNN
-F 1 "GND" H 10255 5877 50  0000 C CNN
-F 2 "" H 10250 6050 50  0001 C CNN
-F 3 "" H 10250 6050 50  0001 C CNN
-	1    10250 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 3150 8900 3150
-Wire Wire Line
-	8650 3250 8900 3250
-Text GLabel 8650 3150 0    50   Input ~ 0
-FT231_D-
-Text GLabel 8650 3250 0    50   Input ~ 0
-FT231_D+
-Connection ~ 10250 5300
-Wire Wire Line
-	10250 5300 10250 5750
-Text GLabel 10800 5200 2    50   Input ~ 0
-FT231_D+
-Text GLabel 10800 5300 2    50   Input ~ 0
-FT231_D-
-Wire Wire Line
-	10100 5000 10550 5000
-Text GLabel 10550 5000 2    50   Input ~ 0
-FT231X_VCC
-$Comp
-L Device:C C3
-U 1 1 5BE08F85
-P 10300 1650
-F 0 "C3" H 10415 1696 50  0000 L CNN
-F 1 "47pF" H 10415 1605 50  0000 L CNN
-F 2 "" H 10338 1500 50  0001 C CNN
-F 3 "~" H 10300 1650 50  0001 C CNN
-	1    10300 1650
-	1    0    0    -1  
-$EndComp
-Connection ~ 10300 1500
-Wire Wire Line
-	10300 1500 10450 1500
-$Comp
-L power:GND #PWR?
-U 1 1 5BE0902D
-P 10300 1800
-F 0 "#PWR?" H 10300 1550 50  0001 C CNN
-F 1 "GND" H 10305 1627 50  0000 C CNN
-F 2 "" H 10300 1800 50  0001 C CNN
-F 3 "" H 10300 1800 50  0001 C CNN
-	1    10300 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 2850 8800 2850
-Wire Wire Line
-	8900 3450 8800 3450
-$Comp
-L Device:C C4
-U 1 1 5BE093C1
-P 8800 3600
-F 0 "C4" H 8915 3646 50  0000 L CNN
-F 1 "0.1uF" H 8915 3555 50  0000 L CNN
-F 2 "" H 8838 3450 50  0001 C CNN
-F 3 "~" H 8800 3600 50  0001 C CNN
-	1    8800 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BE096AF
-P 8800 3750
-F 0 "#PWR?" H 8800 3500 50  0001 C CNN
-F 1 "GND" H 8805 3577 50  0000 C CNN
-F 2 "" H 8800 3750 50  0001 C CNN
-F 3 "" H 8800 3750 50  0001 C CNN
-	1    8800 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 3450 8800 2850
-Connection ~ 8800 3450
-Connection ~ 8800 2850
-Wire Wire Line
-	9500 2200 9500 2550
-Wire Wire Line
-	8800 2400 9700 2400
-Wire Wire Line
-	9700 2400 9700 2550
-Wire Wire Line
-	8800 2400 8800 2850
-Wire Wire Line
-	8800 2400 8800 2150
-Connection ~ 8800 2400
-Text GLabel 8800 2150 1    50   Input ~ 0
-FT231_3V3OUT
-$Comp
-L Device:R_US R3
-U 1 1 5BE0AEAA
-P 10450 3950
-F 0 "R3" V 10245 3950 50  0000 C CNN
-F 1 "1k" V 10336 3950 50  0000 C CNN
-F 2 "" V 10490 3940 50  0001 C CNN
-F 3 "~" H 10450 3950 50  0001 C CNN
-	1    10450 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R4
-U 1 1 5BE0B03D
-P 10450 3850
-F 0 "R4" V 10245 3850 50  0000 C CNN
-F 1 "1k" V 10336 3850 50  0000 C CNN
-F 2 "" V 10490 3840 50  0001 C CNN
-F 3 "~" H 10450 3850 50  0001 C CNN
-	1    10450 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5BE0B145
-P 10750 4150
-F 0 "D1" H 10741 4366 50  0000 C CNN
-F 1 "Yellow" H 10741 4275 50  0000 C CNN
-F 2 "" H 10750 4150 50  0001 C CNN
-F 3 "~" H 10750 4150 50  0001 C CNN
-	1    10750 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5BE0B276
-P 11050 4000
-F 0 "D2" H 11041 4216 50  0000 C CNN
-F 1 "Red" H 11041 4125 50  0000 C CNN
-F 2 "" H 11050 4000 50  0001 C CNN
-F 3 "~" H 11050 4000 50  0001 C CNN
-	1    11050 4000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	11050 3850 10600 3850
-Text GLabel 11050 4150 3    50   Input ~ 0
-FT231_3V3OUT
-Text GLabel 10750 4300 0    50   Input ~ 0
-FT231_3V3OUT
-Wire Wire Line
-	9500 4350 9700 4350
-$Comp
-L power:GND #PWR?
-U 1 1 5BE0BD76
-P 9700 4350
-F 0 "#PWR?" H 9700 4100 50  0001 C CNN
-F 1 "GND" H 9705 4177 50  0000 C CNN
-F 2 "" H 9700 4350 50  0001 C CNN
-F 3 "" H 9700 4350 50  0001 C CNN
-	1    9700 4350
-	1    0    0    -1  
-$EndComp
-Connection ~ 9700 4350
-Wire Wire Line
-	10600 3950 10750 3950
-Wire Wire Line
-	10750 3950 10750 4000
-$Comp
-L power:VCC #PWR?
-U 1 1 5BE0F5BA
-P 1050 1100
-F 0 "#PWR?" H 1050 950 50  0001 C CNN
-F 1 "VCC" V 1068 1227 50  0000 L CNN
-F 2 "" H 1050 1100 50  0001 C CNN
-F 3 "" H 1050 1100 50  0001 C CNN
-	1    1050 1100
-	0    -1   -1   0   
-$EndComp
+$Sheet
+S 850  4750 1200 550 
+U 5BE1DDE1
+F0 "teensy-breakout" 50
+F1 "teensy-breakout.sch" 50
+$EndSheet
+$Sheet
+S 900  3700 1150 550 
+U 5BE1ED61
+F0 "xbee_breakout" 50
+F1 "xbee-breakout.sch" 50
+$EndSheet
+$Sheet
+S 750  6100 1350 650 
+U 5BE1F523
+F0 "FT231X_breakout" 50
+F1 "FT231X_breakout.sch" 50
+$EndSheet
 $EndSCHEMATC
