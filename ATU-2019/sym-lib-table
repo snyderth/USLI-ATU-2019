@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name teensy)(type Legacy)(uri /home/thomas/KicadProjects/USLI/teensy/teensy_library/teensy.lib)(options "")(descr ""))
   (lib (name ATU-2019-eagle-import)(type Legacy)(uri ${KIPRJMOD}/ATU-2019-eagle-import.lib)(options "")(descr ""))
+  (lib (name Venus_GPS-v21)(type Legacy)(uri /home/thomas/KicadProjects/USLI/GPS/Venus_GPS-v21.lib)(options "")(descr ""))
 )

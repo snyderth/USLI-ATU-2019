@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Regulator_Linear:LM1085-3.3 U5
-U 1 1 5BE06742
-P 6450 2800
-F 0 "U5" H 6450 3042 50  0000 C CNN
-F 1 "GPS_3V3_Supply" H 6450 2951 50  0000 C CNN
-F 2 "" H 6450 3050 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 6450 2800 50  0001 C CNN
-	1    6450 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Regulator_Linear:LM1085-3.3 U7
 U 1 1 5BE16E97
@@ -53,5 +42,11 @@ S 750  6100 1350 650
 U 5BE1F523
 F0 "FT231X_breakout" 50
 F1 "FT231X_breakout.sch" 50
+$EndSheet
+$Sheet
+S 950  2750 1150 600 
+U 5BE1F2B9
+F0 "GPS" 50
+F1 "GPS.sch" 50
 $EndSheet
 $EndSCHEMATC
