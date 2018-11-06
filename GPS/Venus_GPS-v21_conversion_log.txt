@@ -1,0 +1,17 @@
+#********** START OF eagle6xx-sch-to-kicad-sch.ulp 2.0 06-11-2018 :07:31:09 LOG **********#
+    Conversion completed with no Messages
+#********** END OF eagle6xx-sch-to-kicad-sch.ulp 2.0 06-11-2018 :07:31:09 LOG **********#
+
+#********** START OF exp-lbrs.ulp 6.8 06-11-2018 :07:33:11 LOG **********#
+OK: Eagle library export from SCH/PCB successful
+    Conversion completed with no messages
+#********** END OF exp-lbrs.ulp 6.8 06-11-2018 :07:33:11 LOG **********#
+
+
+#********** START OF eagle-lbr2kicad-1.0.ulp 3.1 06-11-2018 :07:34:00 LOG **********#
+Missing Prefix Part =''				SPARKFUN_CREATIVE_COMMONS					Venus_GPS-v21		M
+Missing Prefix Part =L				SPARKFUN_OSHW-LOGO-L					Venus_GPS-v21		M
+Missing Prefix Part =M				SPARKFUN_OSHW-LOGO-M					Venus_GPS-v21		M
+Missing Prefix Part =S				SPARKFUN_OSHW-LOGO-S					Venus_GPS-v21		M
+#********** END OF eagle-lbr2kicad-1.0.ulp 3.1 06-11-2018 :07:34:00 LOG **********#
+

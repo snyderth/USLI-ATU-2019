@@ -1,0 +1,220 @@
+Cmp-Mod V01 Created by Cvpcb (2015-02-06 BZR 5410)-product   date = Mon 09 Feb 2015 04:12:04 PM PST
+
+BeginCmp
+TimeStamp = /5BE1B49B;
+Reference = C1;
+ValeurCmp = CAP0402-CAP;
+IdModule  = 0402-CAP;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1B563;
+Reference = C2;
+ValeurCmp = CAP_POL1206;
+IdModule  = EIA3216;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1B62B;
+Reference = C3;
+ValeurCmp = CAP0402-CAP;
+IdModule  = 0402-CAP;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1B6F3;
+Reference = C4;
+ValeurCmp = CAP0402-CAP;
+IdModule  = 0402-CAP;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1B7BB;
+Reference = C5;
+ValeurCmp = CAP0402-CAP;
+IdModule  = 0402-CAP;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1B883;
+Reference = C7;
+ValeurCmp = CAP_POLEN_J2;
+IdModule  = EN_J2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1B94B;
+Reference = D1;
+ValeurCmp = DIODESOD;
+IdModule  = SOD-323;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1BDFB;
+Reference = JP1;
+ValeurCmp = M04PTH;
+IdModule  = 1X04;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1BEC3;
+Reference = JP2;
+ValeurCmp = M04PTH;
+IdModule  = 1X04;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1BF8B;
+Reference = JP3;
+ValeurCmp = M04PTH;
+IdModule  = 1X04;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1C053;
+Reference = JP4;
+ValeurCmp = M04PTH;
+IdModule  = 1X04;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1C11B;
+Reference = JP5;
+ValeurCmp = SMA_EDGE;
+IdModule  = SMA-EDGE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1C1E3;
+Reference = JP6;
+ValeurCmp = FIDUCIALUFIDUCIAL;
+IdModule  = MICRO-FIDUCIAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1C2AB;
+Reference = JP7;
+ValeurCmp = FIDUCIALUFIDUCIAL;
+IdModule  = MICRO-FIDUCIAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1C373;
+Reference = L1;
+ValeurCmp = INDUCTOR0402;
+IdModule  = C0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1C43B;
+Reference = LED1;
+ValeurCmp = LED0603;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1C503;
+Reference = LOGO1;
+ValeurCmp = LOGO-SFESK;
+IdModule  = SFE-LOGO-FLAME;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1C5CB;
+Reference = LOGO2;
+ValeurCmp = LOGO-SFESK;
+IdModule  = SFE-LOGO-FLAME;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1C693;
+Reference = LOGO3;
+ValeurCmp = LOGO-SFENW2;
+IdModule  = SFE-NEW-WEB;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1CA7B;
+Reference = R1;
+ValeurCmp = RESISTOR0402-RES;
+IdModule  = 0402-RES;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1CB43;
+Reference = R2;
+ValeurCmp = RESISTOR0402-RES;
+IdModule  = 0402-RES;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1CC0B;
+Reference = R3;
+ValeurCmp = RESISTOR0402-RES;
+IdModule  = 0402-RES;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1CCD3;
+Reference = R4;
+ValeurCmp = RESISTOR0402-RES;
+IdModule  = 0402-RES;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1CD9B;
+Reference = R6;
+ValeurCmp = RESISTOR0402-RES;
+IdModule  = 0402-RES;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1CE63;
+Reference = R7;
+ValeurCmp = GND-JUMP;
+IdModule  = GND-JUMP;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1CF2B;
+Reference = SJ1;
+ValeurCmp = SOLDERJUMPER_2WAYPASTE2&3;
+IdModule  = SJ_3_PASTE2&3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1CFF3;
+Reference = SJ2;
+ValeurCmp = SOLDERJUMPER_2WAYPASTE2&3;
+IdModule  = SJ_3_PASTE2&3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1D0BB;
+Reference = SJ3;
+ValeurCmp = SOLDERJUMPERNC;
+IdModule  = SJ_2S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1D183;
+Reference = U$4;
+ValeurCmp = OSHW-LOGOS;
+IdModule  = OSHW-LOGO-S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1D24B;
+Reference = U$5;
+ValeurCmp = CREATIVE_COMMONS;
+IdModule  = CREATIVE_COMMONS;
+EndCmp
+
+BeginCmp
+TimeStamp = /5BE1D313;
+Reference = U1;
+ValeurCmp = VENUS638FLPX-L;
+IdModule  = VENUS638FLPX;
+EndCmp
+
+EndListe
