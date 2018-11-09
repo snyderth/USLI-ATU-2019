@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC3118
+D 18V, 2A Buck-Boost DC/DC
+$ENDCMP
+#
+#End Doc Library

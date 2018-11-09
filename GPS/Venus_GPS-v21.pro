@@ -1,4 +1,4 @@
-update=Mon 16 Feb 2015 06:37:24 AM PST
+update=Thu 08 Nov 2018 07:08:55 AM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -28,5 +28,3 @@ version=1
 [eeschema]
 version=1
 LibDir=
-[eeschema/libraries]
-LibName1=Venus_GPS-v21

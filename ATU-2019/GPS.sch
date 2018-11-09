@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -87,4 +87,157 @@ F 3 "" H 7150 2500 50  0001 C CNN
 	1    7150 2500
 	1    0    0    -1  
 $EndComp
+Text GLabel 6450 2700 0    50   Input ~ 0
+uC_gps_TX
+Text GLabel 6450 2800 0    50   Input ~ 0
+uC_gps_RX
+Wire Wire Line
+	6450 1900 6300 1900
+Wire Wire Line
+	6300 1900 6300 1800
+Wire Wire Line
+	6450 1800 6300 1800
+Connection ~ 6300 1800
+Wire Wire Line
+	6300 1800 6300 1700
+Wire Wire Line
+	6450 1700 6300 1700
+Connection ~ 6300 1700
+Wire Wire Line
+	6300 1700 6300 1500
+Text GLabel 6300 1500 1    50   Input ~ 0
+GPS_VCC
+$Comp
+L Device:C C2
+U 1 1 5BE450A8
+P 5700 2450
+F 0 "C2" H 5815 2496 50  0000 L CNN
+F 1 "1uF" H 5815 2405 50  0000 L CNN
+F 2 "" H 5738 2300 50  0001 C CNN
+F 3 "~" H 5700 2450 50  0001 C CNN
+	1    5700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE451F8
+P 5700 2600
+F 0 "#PWR?" H 5700 2350 50  0001 C CNN
+F 1 "GND" H 5705 2427 50  0000 C CNN
+F 2 "" H 5700 2600 50  0001 C CNN
+F 3 "" H 5700 2600 50  0001 C CNN
+	1    5700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5BE45359
+P 5700 1700
+F 0 "R1" H 5768 1746 50  0000 L CNN
+F 1 "33k" H 5768 1655 50  0000 L CNN
+F 2 "" V 5740 1690 50  0001 C CNN
+F 3 "~" H 5700 1700 50  0001 C CNN
+	1    5700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2300 5700 2200
+Wire Wire Line
+	6450 2200 5700 2200
+Connection ~ 5700 2200
+Wire Wire Line
+	5700 2200 5700 1850
+Text GLabel 5700 1550 1    50   Input ~ 0
+GPS_VCC
+Wire Wire Line
+	6450 2100 6300 2100
+Wire Wire Line
+	6300 2100 6300 1900
+Connection ~ 6300 1900
+Wire Wire Line
+	7850 3900 7850 4000
+Connection ~ 7850 4000
+Wire Wire Line
+	7850 4000 7850 4100
+Connection ~ 7850 4100
+Wire Wire Line
+	7850 4100 7850 4200
+Connection ~ 7850 4200
+Wire Wire Line
+	7850 4200 7850 4300
+Connection ~ 7850 4300
+Wire Wire Line
+	7850 4300 7850 4400
+Connection ~ 7850 4400
+Wire Wire Line
+	7850 4400 7850 4500
+Connection ~ 7850 4500
+Wire Wire Line
+	7850 4500 7850 4600
+Connection ~ 7850 4600
+Wire Wire Line
+	7850 4600 7850 4700
+Connection ~ 7850 4700
+Wire Wire Line
+	7850 4700 7850 4800
+Connection ~ 7850 4800
+Wire Wire Line
+	7850 4800 7850 4900
+Connection ~ 7850 4900
+Wire Wire Line
+	7850 4900 7850 5000
+Connection ~ 7850 5000
+Wire Wire Line
+	7850 5000 7850 5100
+Connection ~ 7850 5100
+Wire Wire Line
+	7850 5100 7850 5400
+Text GLabel 7850 5400 3    50   Input ~ 0
+RF_GND
+Wire Wire Line
+	6450 4500 6450 4600
+Connection ~ 6450 4600
+Wire Wire Line
+	6450 4600 6450 4700
+Connection ~ 6450 4700
+Wire Wire Line
+	6450 4700 6450 4800
+Connection ~ 6450 4800
+Wire Wire Line
+	6450 4800 6450 4900
+Connection ~ 6450 4900
+Wire Wire Line
+	6450 4900 6450 5000
+Connection ~ 6450 5000
+Wire Wire Line
+	6450 5000 6450 5100
+Connection ~ 6450 5100
+Wire Wire Line
+	6450 5100 6450 5200
+$Comp
+L power:GND #PWR?
+U 1 1 5BE45CFD
+P 6450 5200
+F 0 "#PWR?" H 6450 4950 50  0001 C CNN
+F 1 "GND" H 6455 5027 50  0000 C CNN
+F 2 "" H 6450 5200 50  0001 C CNN
+F 3 "" H 6450 5200 50  0001 C CNN
+	1    6450 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE45D2E
+P 8350 3250
+F 0 "#PWR?" H 8350 3000 50  0001 C CNN
+F 1 "GND" H 8355 3077 50  0000 C CNN
+F 2 "" H 8350 3250 50  0001 C CNN
+F 3 "" H 8350 3250 50  0001 C CNN
+	1    8350 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8350 3000 1    50   Input ~ 0
+RF_GND
+Wire Wire Line
+	8350 3000 8350 3250
 $EndSCHEMATC

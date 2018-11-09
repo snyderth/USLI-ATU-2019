@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# MS580314BA01-00
+#
+DEF MS580314BA01-00 U 0 40 Y Y 1 L N
+F0 "U" -400 600 50 H V L BNN
+F1 "MS580314BA01-00" -400 -800 50 H V L BNN
+F2 "XDCR_MS580314BA01-00" 0 0 50 H I L BNN
+F3 "223-1626-5-ND" 0 0 50 H I L BNN
+F4 "MS5803-14BA01 DIGIT PRESSURE SENSOR TUBE" 0 0 50 H I L BNN
+F5 "Measurement Specialties" 0 0 50 H I L BNN
+F6 "SMD-8 Measurement Specialties" 0 0 50 H I L BNN
+F7 "MS580314BA01-00" 0 0 50 H I L BNN
+F8 "https://www.digikey.com/product-detail/en/te-connectivity-measurement-specialties/MS580314BA01-00/223-1626-5-ND/5277631?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 400 500 400 -600 N
+P 2 0 0 10 400 -600 -400 -600 N
+P 2 0 0 10 -400 -600 -400 500 N
+P 2 0 0 10 -400 500 400 500 N
+X SCLK 1 -600 100 200 R 40 40 0 0 I C
+X ~CSB~ 3 -600 0 200 R 40 40 0 0 I 
+X PS 6 -600 -100 200 R 40 40 0 0 I 
+X SDI/SDA 7 -600 -200 200 R 40 40 0 0 I 
+X SDO 8 600 -200 200 L 40 40 0 0 O 
+X VDD 5 600 400 200 L 40 40 0 0 W 
+X GND 2 600 -500 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

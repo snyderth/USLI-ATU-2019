@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -50,17 +50,13 @@ Text GLabel 1950 3600 0    50   Input ~ 0
 uC_29_CAN0TX
 Text GLabel 1950 3700 0    50   Input ~ 0
 uC_30_CAN0RX
-Text GLabel 1950 3800 0    50   Input ~ 0
-uC_31_RX4
-Text GLabel 1950 3900 0    50   Input ~ 0
-uC_32_TX4
 $Comp
 L Connector:Conn_01x24_Female J?
 U 1 1 5BE1E3C3
 P 2150 2700
 AR Path="/5BE1E3C3" Ref="J?"  Part="1" 
-AR Path="/5BE1DDE1/5BE1E3C3" Ref="J?"  Part="1" 
-F 0 "J?" H 2000 4050 50  0000 L CNN
+AR Path="/5BE1DDE1/5BE1E3C3" Ref="J1"  Part="1" 
+F 0 "J1" H 2000 4050 50  0000 L CNN
 F 1 "Teensy_LHS" H 1850 3950 50  0000 L CNN
 F 2 "" H 2150 2700 50  0001 C CNN
 F 3 "~" H 2150 2700 50  0001 C CNN
@@ -72,8 +68,8 @@ L Connector:Conn_01x24_Female J?
 U 1 1 5BE1E3CA
 P 2700 2800
 AR Path="/5BE1E3CA" Ref="J?"  Part="1" 
-AR Path="/5BE1DDE1/5BE1E3CA" Ref="J?"  Part="1" 
-F 0 "J?" H 2550 4150 50  0000 L CNN
+AR Path="/5BE1DDE1/5BE1E3CA" Ref="J2"  Part="1" 
+F 0 "J2" H 2550 4150 50  0000 L CNN
 F 1 "Teensy_RHS" H 2400 4050 50  0000 L CNN
 F 2 "" H 2700 2800 50  0001 C CNN
 F 3 "~" H 2700 2800 50  0001 C CNN
@@ -106,10 +102,6 @@ Text GLabel 2900 3400 2    50   Input ~ 0
 uC_38-A19-SDA1
 Text GLabel 2900 3500 2    50   Input ~ 0
 uC_37-A18-SCL1
-Text GLabel 2900 3600 2    50   Input ~ 0
-uC_36-A17
-Text GLabel 2900 3700 2    50   Input ~ 0
-uC_35-A16
 Text GLabel 2900 3800 2    50   Input ~ 0
 uC_34-A15-CAN1RX-SDA0-RX5
 Text GLabel 2900 3900 2    50   Input ~ 0
@@ -141,8 +133,8 @@ L teensy:Teensy3.6 U?
 U 1 1 5BE1E818
 P 6500 3350
 AR Path="/5BE1E818" Ref="U?"  Part="1" 
-AR Path="/5BE1DDE1/5BE1E818" Ref="U?"  Part="1" 
-F 0 "U?" H 6500 5737 60  0000 C CNN
+AR Path="/5BE1DDE1/5BE1E818" Ref="U1"  Part="1" 
+F 0 "U1" H 6500 5737 60  0000 C CNN
 F 1 "Teensy3.6" H 6500 5631 60  0000 C CNN
 F 2 "" H 6500 3350 60  0000 C CNN
 F 3 "" H 6500 3350 60  0000 C CNN
@@ -269,10 +261,10 @@ uC_gps_TX
 Text GLabel 7500 4550 2    50   Input ~ 0
 uC_5Vin
 $Comp
-L Regulator_Linear:LM1085-5.0 U?
+L Regulator_Linear:LM1085-5.0 U2
 U 1 1 5BE1EC4E
 P 1950 5100
-F 0 "U?" H 1950 5342 50  0000 C CNN
+F 0 "U2" H 1950 5342 50  0000 C CNN
 F 1 "Teensy_5V" H 1950 5251 50  0000 C CNN
 F 2 "" H 1950 5350 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 1950 5100 50  0001 C CNN
@@ -304,10 +296,10 @@ F 3 "" H 1950 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 5BE1EC62
 P 2250 5250
-F 0 "C?" H 2365 5296 50  0000 L CNN
+F 0 "C1" H 2365 5296 50  0000 L CNN
 F 1 "4700pF" H 2365 5205 50  0000 L CNN
 F 2 "" H 2288 5100 50  0001 C CNN
 F 3 "~" H 2250 5250 50  0001 C CNN
@@ -325,4 +317,20 @@ F 3 "" H 2250 5400 50  0001 C CNN
 	1    2250 5400
 	1    0    0    -1  
 $EndComp
+Text GLabel 5500 3550 0    50   Input ~ 0
+uC_IMU_TX
+Text GLabel 5500 3450 0    50   Input ~ 0
+uC_IMU_RX
+Text GLabel 1950 3800 0    50   Input ~ 0
+uC_IMU_RX
+Text GLabel 1950 3900 0    50   Input ~ 0
+uC_IMU_TX
+Text GLabel 5500 4350 0    50   Input ~ 0
+accel_self_test
+Text GLabel 2900 3700 2    50   Input ~ 0
+accel_self_test
+Text GLabel 5500 4450 0    50   Input ~ 0
+uC_433_reset
+Text GLabel 2900 3600 2    50   Input ~ 0
+uC_433_reset
 $EndSCHEMATC

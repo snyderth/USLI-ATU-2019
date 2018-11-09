@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Regulator_Linear:LM1085-3.3 U7
-U 1 1 5BE16E97
-P 6950 1400
-F 0 "U7" H 6950 1642 50  0000 C CNN
-F 1 "Sensor_3V3_Supply" H 6950 1551 50  0000 C CNN
-F 2 "" H 6950 1650 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 6950 1400 50  0001 C CNN
-	1    6950 1400
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 850  4750 1200 550 
 U 5BE1DDE1
@@ -48,5 +37,17 @@ S 950  2750 1150 600
 U 5BE1F2B9
 F0 "GPS" 50
 F1 "GPS.sch" 50
+$EndSheet
+$Sheet
+S 2650 1450 1250 600 
+U 5BE46730
+F0 "Sensors" 50
+F1 "sensors.sch" 50
+$EndSheet
+$Sheet
+S 5400 1800 1200 500 
+U 5BE56F77
+F0 "433 MHz Transmitter" 50
+F1 "433_trans.sch" 50
 $EndSheet
 $EndSCHEMATC

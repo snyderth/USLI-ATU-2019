@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Venus_GPS-v21)(type Legacy)(uri /home/thomas/KicadProjects/USLI/GPS/Venus_GPS-v21.mod)(options "")(descr ""))
+)

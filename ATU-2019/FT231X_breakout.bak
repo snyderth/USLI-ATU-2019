@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Regulator_Linear:LM1085-3.3 U2
-U 1 1 5BE1F88C
-P 4100 1850
-F 0 "U2" H 4100 2092 50  0000 C CNN
-F 1 "FT231XS_3V3_Supply" H 4100 2001 50  0000 C CNN
-F 2 "" H 4100 2100 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 4100 1850 50  0001 C CNN
-	1    4100 1850
-	1    0    0    -1  
-$EndComp
 $Comp
 L Interface_USB:FT231XS U1
 U 1 1 5BE1F893
@@ -36,32 +25,6 @@ F 3 "http://www.ftdichip.com/Products/ICs/FT231X.html" H 3800 3800 50  0001 C CN
 	1    3800 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5BE1F89A
-P 3800 1850
-F 0 "#PWR?" H 3800 1700 50  0001 C CNN
-F 1 "VCC" V 3818 1977 50  0000 L CNN
-F 2 "" H 3800 1850 50  0001 C CNN
-F 3 "" H 3800 1850 50  0001 C CNN
-	1    3800 1850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BE1F8A0
-P 4100 2150
-F 0 "#PWR?" H 4100 1900 50  0001 C CNN
-F 1 "GND" H 4105 1977 50  0000 C CNN
-F 2 "" H 4100 2150 50  0001 C CNN
-F 3 "" H 4100 2150 50  0001 C CNN
-	1    4100 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 1850 4500 1850
-Text GLabel 4650 1850 2    50   Input ~ 0
-FT231X_VCC
 Text GLabel 3700 2550 1    50   Input ~ 0
 FT231X_VCC
 $Comp
@@ -191,31 +154,6 @@ Wire Wire Line
 	4300 5350 4500 5350
 Text GLabel 4550 5200 2    50   Input ~ 0
 FT231X_VCC
-$Comp
-L Device:C C2
-U 1 1 5BE1F8F3
-P 4500 2000
-F 0 "C2" H 4615 2046 50  0000 L CNN
-F 1 "47pF" H 4615 1955 50  0000 L CNN
-F 2 "" H 4538 1850 50  0001 C CNN
-F 3 "~" H 4500 2000 50  0001 C CNN
-	1    4500 2000
-	1    0    0    -1  
-$EndComp
-Connection ~ 4500 1850
-Wire Wire Line
-	4500 1850 4650 1850
-$Comp
-L power:GND #PWR?
-U 1 1 5BE1F8FC
-P 4500 2150
-F 0 "#PWR?" H 4500 1900 50  0001 C CNN
-F 1 "GND" H 4505 1977 50  0000 C CNN
-F 2 "" H 4500 2150 50  0001 C CNN
-F 3 "" H 4500 2150 50  0001 C CNN
-	1    4500 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3100 3200 3000 3200
 Wire Wire Line
