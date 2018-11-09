@@ -28,8 +28,6 @@ Text GLabel 1950 2100 0    50   Input ~ 0
 uC_4_pwm-SDA2
 Text GLabel 1950 2200 0    50   Input ~ 0
 uC_5_pwm
-Text GLabel 1950 2300 0    50   Input ~ 0
-uC_6_pwm
 Text GLabel 1950 2600 0    50   Input ~ 0
 uC_9_RX2
 Text GLabel 1950 2700 0    50   Input ~ 0
@@ -333,4 +331,6 @@ Text GLabel 5500 4450 0    50   Input ~ 0
 uC_433_reset
 Text GLabel 2900 3600 2    50   Input ~ 0
 uC_433_reset
+Text GLabel 1950 2300 0    50   Input ~ 0
+uC_6_pwm
 $EndSCHEMATC
