@@ -58,35 +58,13 @@ F 3 "" H 2050 1950 50  0001 C CNN
 	1    2050 1950
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:C C2
-U 1 1 5BE1F1AC
-P 2650 2100
-F 0 "C2" H 2765 2146 50  0000 L CNN
-F 1 "4700pF" H 2765 2055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 1950 50  0001 C CNN
-F 3 "~" H 2650 2100 50  0001 C CNN
-	1    2650 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5BE1F1B3
-P 2650 2250
-F 0 "#PWR013" H 2650 2000 50  0001 C CNN
-F 1 "GND" H 2655 2077 50  0000 C CNN
-F 2 "" H 2650 2250 50  0001 C CNN
-F 3 "" H 2650 2250 50  0001 C CNN
-	1    2650 2250
-	1    0    0    -1  
-$EndComp
 Text GLabel 2650 1950 2    50   Input ~ 0
 XBEE_3V3
 Text GLabel 5150 2450 1    50   Input ~ 0
-XBEE_3V3
-Text GLabel 3800 2650 0    50   Input ~ 0
+XBEE_VCC
+Text GLabel 4150 1800 2    50   Input ~ 0
 uC_xbee_RX
-Text GLabel 3800 2750 0    50   Input ~ 0
+Text GLabel 3650 1800 0    50   Input ~ 0
 uC_xbee_TX
 Text GLabel 6250 2750 2    50   Input ~ 0
 xbee_RSSI_out
@@ -114,26 +92,94 @@ F 3 "" H 5150 4550 50  0001 C CNN
 $EndComp
 Text GLabel 4050 3650 0    50   Input ~ 0
 xbee_reset
-Text GLabel 3750 2850 0    50   Input ~ 0
+Text GLabel 3650 1300 0    50   Input ~ 0
 FT_TX
-Text GLabel 3750 2550 0    50   Input ~ 0
+Text GLabel 4150 1300 2    50   Input ~ 0
 FT_RX
 Wire Wire Line
-	4050 2650 3900 2650
+	4050 2650 3950 2650
 Wire Wire Line
-	3750 2550 3900 2550
+	3850 2750 4050 2750
 Wire Wire Line
-	3900 2550 3900 2650
-Connection ~ 3900 2650
+	3950 1550 3950 2650
 Wire Wire Line
-	3900 2650 3800 2650
+	3850 2750 3850 1550
+$Comp
+L Device:Jumper_NC_Dual JP2
+U 1 1 5BE86492
+P 4050 1550
+F 0 "JP2" V 4004 1651 50  0000 L CNN
+F 1 "XBEE_TX_JUMPER" V 4095 1651 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 4050 1550 50  0001 C CNN
+F 3 "~" H 4050 1550 50  0001 C CNN
+	1    4050 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 5BE8656D
+P 3750 1550
+F 0 "JP1" V 3796 1652 50  0000 L CNN
+F 1 "XBEE_RX_JUMPER" V 3705 1652 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 3750 1550 50  0001 C CNN
+F 3 "~" H 3750 1550 50  0001 C CNN
+	1    3750 1550
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	3800 2750 3900 2750
+	4050 1800 4150 1800
 Wire Wire Line
-	3750 2850 3900 2850
+	4150 1300 4050 1300
 Wire Wire Line
-	3900 2850 3900 2750
-Connection ~ 3900 2750
+	3750 1300 3650 1300
 Wire Wire Line
-	3900 2750 4050 2750
+	3750 1800 3650 1800
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BEAC053
+P 6550 1750
+AR Path="/5BE46730/5BEAC053" Ref="J?"  Part="1" 
+AR Path="/5BE1ED61/5BEAC053" Ref="J?"  Part="1" 
+F 0 "J?" V 6610 1790 50  0000 L CNN
+F 1 "XBEE_SW" V 6500 1800 50  0000 L CNN
+F 2 "" H 6550 1750 50  0001 C CNN
+F 3 "~" H 6550 1750 50  0001 C CNN
+	1    6550 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BEAC05A
+P 6050 1800
+AR Path="/5BE46730/5BEAC05A" Ref="C?"  Part="1" 
+AR Path="/5BE1ED61/5BEAC05A" Ref="C?"  Part="1" 
+F 0 "C?" H 6165 1846 50  0000 L CNN
+F 1 "4700pF" H 6150 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6088 1650 50  0001 C CNN
+F 3 "~" H 6050 1800 50  0001 C CNN
+	1    6050 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 1950 0    50   Input ~ 0
+XBEE_VCC
+Wire Wire Line
+	6800 1950 6550 1950
+Wire Wire Line
+	6450 1950 6050 1950
+Wire Wire Line
+	6050 1950 5750 1950
+Connection ~ 6050 1950
+Text GLabel 6800 1950 2    50   Input ~ 0
+XBEE_3V3
+$Comp
+L power:GND #PWR?
+U 1 1 5BEAC247
+P 6050 1650
+F 0 "#PWR?" H 6050 1400 50  0001 C CNN
+F 1 "GND" H 6055 1477 50  0000 C CNN
+F 2 "" H 6050 1650 50  0001 C CNN
+F 3 "" H 6050 1650 50  0001 C CNN
+	1    6050 1650
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

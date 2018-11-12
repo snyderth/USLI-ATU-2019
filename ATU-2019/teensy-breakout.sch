@@ -134,7 +134,7 @@ AR Path="/5BE1E818" Ref="U?"  Part="1"
 AR Path="/5BE1DDE1/5BE1E818" Ref="U2"  Part="1" 
 F 0 "U2" H 6500 5737 60  0000 C CNN
 F 1 "Teensy3.6" H 6500 5631 60  0000 C CNN
-F 2 "" H 6500 3350 60  0001 C CNN
+F 2 "teensy:Teensy35_36" H 6500 3350 60  0001 C CNN
 F 3 "" H 6500 3350 60  0000 C CNN
 	1    6500 3350
 	1    0    0    -1  
@@ -256,7 +256,7 @@ Text GLabel 5500 2250 0    50   Input ~ 0
 uC_gps_RX
 Text GLabel 5500 2350 0    50   Input ~ 0
 uC_gps_TX
-Text GLabel 7500 4550 2    50   Input ~ 0
+Text GLabel 8100 4550 2    50   Input ~ 0
 uC_5Vin
 $Comp
 L Regulator_Linear:LM1085-5.0 U1
@@ -296,24 +296,24 @@ $EndComp
 $Comp
 L Device:C C1
 U 1 1 5BE1EC62
-P 2250 5250
-F 0 "C1" H 2365 5296 50  0000 L CNN
-F 1 "4700pF" H 2365 5205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2288 5100 50  0001 C CNN
-F 3 "~" H 2250 5250 50  0001 C CNN
-	1    2250 5250
-	1    0    0    -1  
+P 7700 4400
+F 0 "C1" H 7400 4050 50  0000 L CNN
+F 1 "4700pF" H 7250 4150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7738 4250 50  0001 C CNN
+F 3 "~" H 7700 4400 50  0001 C CNN
+	1    7700 4400
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5BE1EC69
-P 2250 5400
-F 0 "#PWR03" H 2250 5150 50  0001 C CNN
-F 1 "GND" H 2255 5227 50  0000 C CNN
-F 2 "" H 2250 5400 50  0001 C CNN
-F 3 "" H 2250 5400 50  0001 C CNN
-	1    2250 5400
-	1    0    0    -1  
+P 7700 4250
+F 0 "#PWR03" H 7700 4000 50  0001 C CNN
+F 1 "GND" H 7705 4077 50  0000 C CNN
+F 2 "" H 7700 4250 50  0001 C CNN
+F 3 "" H 7700 4250 50  0001 C CNN
+	1    7700 4250
+	-1   0    0    1   
 $EndComp
 Text GLabel 5500 3550 0    50   Input ~ 0
 uC_IMU_TX
@@ -333,4 +333,22 @@ Text GLabel 2900 3600 2    50   Input ~ 0
 uC_433_reset
 Text GLabel 1950 2300 0    50   Input ~ 0
 uC_6_pwm
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BEA22EC
+P 7950 4350
+F 0 "J?" V 8010 4390 50  0000 L CNN
+F 1 "TEENSY_SW" V 7900 4400 50  0000 L CNN
+F 2 "" H 7950 4350 50  0001 C CNN
+F 3 "~" H 7950 4350 50  0001 C CNN
+	1    7950 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 4550 7950 4550
+Wire Wire Line
+	7850 4550 7700 4550
+Connection ~ 7700 4550
+Wire Wire Line
+	7700 4550 7500 4550
 $EndSCHEMATC

@@ -50,4 +50,6 @@ U 5BE56F77
 F0 "433 MHz Transmitter" 50
 F1 "433_trans.sch" 50
 $EndSheet
+Text Notes 7750 2550 0    50   ~ 0
+TODO:\n- Implement full board breakouts for all blocks\n- Implement heartbeat LEDs for all blocks (whether in uC or in hardware)
 $EndSCHEMATC

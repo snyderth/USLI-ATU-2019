@@ -153,7 +153,7 @@ FT231_D-
 Wire Wire Line
 	4300 5350 4500 5350
 Text GLabel 4550 5200 2    50   Input ~ 0
-FT231X_VCC
+FT231X_VBUS
 Wire Wire Line
 	3100 3200 3000 3200
 Wire Wire Line
@@ -265,12 +265,62 @@ Wire Wire Line
 	4800 4300 4950 4300
 Wire Wire Line
 	4950 4300 4950 4350
-Text GLabel 4500 3200 2    50   Input ~ 0
+Text GLabel 4750 3200 2    50   Input ~ 0
 FT_TX
-Text GLabel 4500 3300 2    50   Input ~ 0
+Text GLabel 4750 3300 2    50   Input ~ 0
 FT_RX
 Wire Wire Line
 	4550 5200 4500 5200
 Wire Wire Line
 	4500 5200 4500 5350
+Wire Wire Line
+	4750 3200 4500 3200
+Wire Wire Line
+	4750 3300 4500 3300
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BEAB221
+P 5200 2350
+AR Path="/5BE46730/5BEAB221" Ref="J?"  Part="1" 
+AR Path="/5BE1F523/5BEAB221" Ref="J?"  Part="1" 
+F 0 "J?" V 5260 2390 50  0000 L CNN
+F 1 "FT231_SW" V 5150 2400 50  0000 L CNN
+F 2 "" H 5200 2350 50  0001 C CNN
+F 3 "~" H 5200 2350 50  0001 C CNN
+	1    5200 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BEAB228
+P 4700 2400
+F 0 "C?" H 4815 2446 50  0000 L CNN
+F 1 "4700pF" H 4800 2550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4738 2250 50  0001 C CNN
+F 3 "~" H 4700 2400 50  0001 C CNN
+	1    4700 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 2550 0    50   Input ~ 0
+FT231X_VCC
+Wire Wire Line
+	5450 2550 5200 2550
+Wire Wire Line
+	5100 2550 4700 2550
+Wire Wire Line
+	4700 2550 4400 2550
+Connection ~ 4700 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5BEAB75E
+P 4700 2250
+F 0 "#PWR?" H 4700 2000 50  0001 C CNN
+F 1 "GND" H 4705 2077 50  0000 C CNN
+F 2 "" H 4700 2250 50  0001 C CNN
+F 3 "" H 4700 2250 50  0001 C CNN
+	1    4700 2250
+	-1   0    0    1   
+$EndComp
+Text GLabel 5450 2550 2    50   Input ~ 0
+FT231X_VBUS
 $EndSCHEMATC

@@ -52,30 +52,29 @@ $EndComp
 $Comp
 L Device:C C6
 U 1 1 5BE1F3BA
-P 4600 3050
-F 0 "C6" H 4715 3096 50  0000 L CNN
-F 1 "4700pF" H 4715 3005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4638 2900 50  0001 C CNN
-F 3 "~" H 4600 3050 50  0001 C CNN
-	1    4600 3050
+P 6950 1800
+F 0 "C6" H 7065 1846 50  0000 L CNN
+F 1 "4700pF" H 7065 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6988 1650 50  0001 C CNN
+F 3 "~" H 6950 1800 50  0001 C CNN
+	1    6950 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 5BE1F40E
-P 4600 3200
-F 0 "#PWR022" H 4600 2950 50  0001 C CNN
-F 1 "GND" H 4605 3027 50  0000 C CNN
-F 2 "" H 4600 3200 50  0001 C CNN
-F 3 "" H 4600 3200 50  0001 C CNN
-	1    4600 3200
-	1    0    0    -1  
+P 6950 1650
+F 0 "#PWR022" H 6950 1400 50  0001 C CNN
+F 1 "GND" H 6955 1477 50  0000 C CNN
+F 2 "" H 6950 1650 50  0001 C CNN
+F 3 "" H 6950 1650 50  0001 C CNN
+	1    6950 1650
+	-1   0    0    1   
 $EndComp
 Text GLabel 4750 2900 2    50   Input ~ 0
 GPS_VCC
 Wire Wire Line
 	4600 2900 4750 2900
-Connection ~ 4600 2900
 $Comp
 L sensors:MAX-M8 U7
 U 1 1 5BE76B67
@@ -88,19 +87,15 @@ F 3 "" H 8300 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 2200 6800 2350
+	6800 2200 6800 2250
 Connection ~ 6800 2350
 Wire Wire Line
 	6800 2350 6800 2450
-Text GLabel 6800 2200 1    50   Input ~ 0
+Text GLabel 6450 2000 0    50   Input ~ 0
 GPS_VCC
 Wire Wire Line
 	6800 2450 6800 2650
 Connection ~ 6800 2450
-Text GLabel 8100 2750 2    50   Input ~ 0
-uC_gps_RX
-Text GLabel 8100 2850 2    50   Input ~ 0
-uC_gps_TX
 Wire Wire Line
 	6800 3550 6800 3650
 Connection ~ 6800 3650
@@ -108,7 +103,7 @@ Wire Wire Line
 	6800 3650 6800 3750
 Connection ~ 6800 3750
 Wire Wire Line
-	6800 3750 6800 3850
+	6800 3750 6800 3800
 $Comp
 L power:GND #PWR023
 U 1 1 5BE76E6B
@@ -151,4 +146,111 @@ F 3 "" H 8400 2350 60  0000 C CNN
 	1    8400 2350
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	8100 3650 8150 3650
+Wire Wire Line
+	8150 3650 8150 3900
+Wire Wire Line
+	8150 3900 6900 3900
+Wire Wire Line
+	6900 3900 6900 3800
+Wire Wire Line
+	6900 3800 6800 3800
+Connection ~ 6800 3800
+Wire Wire Line
+	6800 3800 6800 3850
+$Comp
+L Device:R_US R10
+U 1 1 5BE9A6BF
+P 8250 2750
+F 0 "R10" V 8050 2700 50  0000 L CNN
+F 1 "20" V 8150 2700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8290 2740 50  0001 C CNN
+F 3 "~" H 8250 2750 50  0001 C CNN
+	1    8250 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R11
+U 1 1 5BE9A7B2
+P 8250 2850
+F 0 "R11" V 8050 2800 50  0000 L CNN
+F 1 "20" V 8150 2800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8290 2840 50  0001 C CNN
+F 3 "~" H 8250 2850 50  0001 C CNN
+	1    8250 2850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9600 1850 2    50   Input ~ 0
+uC_gps_RX
+Text GLabel 9100 1850 0    50   Input ~ 0
+uC_gps_TX
+Text GLabel 9100 1350 0    50   Input ~ 0
+FT_TX
+Text GLabel 9600 1350 2    50   Input ~ 0
+FT_RX
+$Comp
+L Device:Jumper_NC_Dual JP?
+U 1 1 5BE9B631
+P 9500 1600
+AR Path="/5BE1ED61/5BE9B631" Ref="JP?"  Part="1" 
+AR Path="/5BE1F2B9/5BE9B631" Ref="JP4"  Part="1" 
+F 0 "JP4" V 9454 1701 50  0000 L CNN
+F 1 "GPS_TX_JUMPER" V 9545 1701 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 9500 1600 50  0001 C CNN
+F 3 "~" H 9500 1600 50  0001 C CNN
+	1    9500 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NC_Dual JP?
+U 1 1 5BE9B638
+P 9200 1600
+AR Path="/5BE1ED61/5BE9B638" Ref="JP?"  Part="1" 
+AR Path="/5BE1F2B9/5BE9B638" Ref="JP3"  Part="1" 
+F 0 "JP3" V 9246 1702 50  0000 L CNN
+F 1 "GPS_RX_JUMPER" V 9155 1702 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 9200 1600 50  0001 C CNN
+F 3 "~" H 9200 1600 50  0001 C CNN
+	1    9200 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9500 1850 9600 1850
+Wire Wire Line
+	9600 1350 9500 1350
+Wire Wire Line
+	9200 1350 9100 1350
+Wire Wire Line
+	9200 1850 9100 1850
+Wire Wire Line
+	9400 2750 8400 2750
+Wire Wire Line
+	9400 1600 9400 2750
+Wire Wire Line
+	9300 2850 8400 2850
+Wire Wire Line
+	9300 1600 9300 2850
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BEA1A20
+P 6600 2100
+F 0 "J?" H 6400 2000 50  0000 C CNN
+F 1 "GPS_SW" H 6400 2100 50  0000 C CNN
+F 2 "" H 6600 2100 50  0001 C CNN
+F 3 "~" H 6600 2100 50  0001 C CNN
+	1    6600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2100 6800 2000
+Wire Wire Line
+	6800 2000 6450 2000
+Wire Wire Line
+	6950 1950 6950 2250
+Wire Wire Line
+	6950 2250 6800 2250
+Connection ~ 6800 2250
+Wire Wire Line
+	6800 2250 6800 2350
 $EndSCHEMATC

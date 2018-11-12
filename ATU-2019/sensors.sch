@@ -93,15 +93,13 @@ Text GLabel 8500 2400 0    50   Input ~ 0
 uC_IMU_RX
 Text GLabel 8500 2500 0    50   Input ~ 0
 uC_IMU_TX
-Text GLabel 10100 1800 2    50   Input ~ 0
-Sensor_VCC
 $Comp
 L Device:Crystal Y1
 U 1 1 5BE4E8F4
 P 8200 1100
 F 0 "Y1" H 8200 1368 50  0000 C CNN
 F 1 "32.768kHz" H 8200 1277 50  0000 C CNN
-F 2 "" H 8200 1100 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_7050-2Pin_7.0x5.0mm_HandSoldering" H 8200 1100 50  0001 C CNN
 F 3 "~" H 8200 1100 50  0001 C CNN
 	1    8200 1100
 	1    0    0    -1  
@@ -166,14 +164,6 @@ Text Label 10100 2100 0    50   ~ 0
 IMU_XOUT32
 Wire Wire Line
 	10100 2100 10550 2100
-Text GLabel 10100 1900 2    50   Input ~ 0
-Sensor_VCC
-Text GLabel 10100 2200 2    50   Input ~ 0
-Sensor_VCC
-Text GLabel 8500 2300 0    50   Input ~ 0
-Sensor_VCC
-Text GLabel 8500 2100 0    50   Input ~ 0
-Sensor_VCC
 $Comp
 L Device:C C13
 U 1 1 5BE4F491
@@ -240,7 +230,7 @@ U 1 1 5BE4FED0
 P 2650 1550
 F 0 "U9" H 2650 2015 50  0000 C CNN
 F 1 "ADXL377" H 2650 1924 50  0000 C CNN
-F 2 "" H 2650 1550 50  0001 C CNN
+F 2 "Sensor_Motion:ADXL377" H 2650 1550 50  0001 C CNN
 F 3 "200g_ACCELEROMETER" H 2650 1550 50  0001 C CNN
 	1    2650 1550
 	1    0    0    -1  
@@ -262,7 +252,7 @@ Connection ~ 1900 1650
 Wire Wire Line
 	1900 1450 1900 1350
 Text GLabel 1900 1350 0    50   Input ~ 0
-Sensor_VCC
+ACCEL_VCC
 Wire Wire Line
 	3400 1550 3450 1550
 Wire Wire Line
@@ -374,7 +364,7 @@ U 1 1 5BE52E3B
 P 2300 5400
 F 0 "U8" H 2300 6067 50  0000 C CNN
 F 1 "MS580314BA01-00" H 2300 5976 50  0000 C CNN
-F 2 "" H 2300 5400 50  0001 L BNN
+F 2 "MS580314BA01-00:XDCR_MS580314BA01-00" H 2300 5400 50  0001 L BNN
 F 3 "223-1626-5-ND" H 2300 5400 50  0001 L BNN
 F 4 "MS5803-14BA01 DIGIT PRESSURE SENSOR TUBE" H 2300 5400 50  0001 L BNN "Field4"
 F 5 "Measurement Specialties" H 2300 5400 50  0001 L BNN "Field5"
@@ -402,18 +392,18 @@ Sensor_VCC
 Wire Wire Line
 	1700 5400 1150 5400
 $Comp
-L Device:Jumper_NC_Dual JP1
+L Device:Jumper_NC_Dual JP5
 U 1 1 5BE54623
 P 1050 5400
-F 0 "JP1" V 1096 5502 50  0000 L CNN
+F 0 "JP5" V 1096 5502 50  0000 L CNN
 F 1 "I2C_ADDR" V 1005 5502 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 1050 5400 50  0001 C CNN
+F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 1050 5400 50  0001 C CNN
 F 3 "~" H 1050 5400 50  0001 C CNN
 	1    1050 5400
 	0    -1   -1   0   
 $EndComp
 Text GLabel 1050 5150 1    50   Input ~ 0
-Sensor_VCC
+PRESSURE_VCC
 $Comp
 L power:GND #PWR024
 U 1 1 5BE54780
@@ -427,7 +417,7 @@ F 3 "" H 1050 5650 50  0001 C CNN
 $EndComp
 Text Notes 600  6050 0    50   ~ 0
 Jumper GND means \nI2C address is 0x77
-Text Notes 700  4650 0    50   ~ 0
+Text Notes 700  4500 0    50   ~ 0
 Jumper to VCC means \nI2C address is 0x76
 Text GLabel 1600 5300 0    50   Input ~ 0
 uC_SCL
@@ -470,17 +460,9 @@ Connection ~ 1650 5600
 Wire Wire Line
 	1650 5600 1550 5600
 Text GLabel 1650 4900 1    50   Input ~ 0
-Sensor_VCC
+PRESSURE_VCC
 Text GLabel 1650 5950 3    50   Input ~ 0
-Sensor_VCC
-Wire Notes Line
-	500  4200 500  6500
-Wire Notes Line
-	500  6500 3550 6500
-Wire Notes Line
-	3550 6500 3550 4200
-Wire Notes Line
-	3550 4200 500  4200
+PRESSURE_VCC
 Text HLabel 3300 4300 0    50   Input ~ 0
 Pressure_Sensor
 Wire Wire Line
@@ -493,4 +475,154 @@ Wire Wire Line
 	6150 3100 6300 3100
 Text GLabel 6150 2950 1    50   Input ~ 0
 FT231X_VCC
+Text GLabel 10100 1200 2    50   Input ~ 0
+Sensor_VCC
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BEA3616
+P 9850 1000
+F 0 "J?" V 9910 1040 50  0000 L CNN
+F 1 "IMU_SW" V 9800 1050 50  0000 L CNN
+F 2 "" H 9850 1000 50  0001 C CNN
+F 3 "~" H 9850 1000 50  0001 C CNN
+	1    9850 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BEA395F
+P 9350 1050
+F 0 "C?" H 9465 1096 50  0000 L CNN
+F 1 "4700pF" H 9450 1200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9388 900 50  0001 C CNN
+F 3 "~" H 9350 1050 50  0001 C CNN
+	1    9350 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BEA3A29
+P 9350 900
+F 0 "#PWR?" H 9350 650 50  0001 C CNN
+F 1 "GND" H 9350 800 50  0000 C CNN
+F 2 "" H 9350 900 50  0001 C CNN
+F 3 "" H 9350 900 50  0001 C CNN
+	1    9350 900 
+	-1   0    0    1   
+$EndComp
+Text GLabel 9050 1200 0    50   Input ~ 0
+BNO_VCC
+Wire Wire Line
+	10100 1200 9850 1200
+Wire Wire Line
+	9750 1200 9350 1200
+Wire Wire Line
+	9350 1200 9050 1200
+Connection ~ 9350 1200
+Text GLabel 10100 1800 2    50   Input ~ 0
+BNO_VCC
+Text GLabel 10100 1900 2    50   Input ~ 0
+BNO_VCC
+Text GLabel 10100 2200 2    50   Input ~ 0
+BNO_VCC
+Text GLabel 8500 2100 0    50   Input ~ 0
+BNO_VCC
+Text GLabel 8500 2300 0    50   Input ~ 0
+BNO_VCC
+Text GLabel 2700 2550 2    50   Input ~ 0
+Sensor_VCC
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BEA55BE
+P 2450 2350
+F 0 "J?" V 2510 2390 50  0000 L CNN
+F 1 "ACCEL_SW" V 2400 2400 50  0000 L CNN
+F 2 "" H 2450 2350 50  0001 C CNN
+F 3 "~" H 2450 2350 50  0001 C CNN
+	1    2450 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BEA55C5
+P 1950 2400
+F 0 "C?" H 2065 2446 50  0000 L CNN
+F 1 "4700pF" H 2050 2550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1988 2250 50  0001 C CNN
+F 3 "~" H 1950 2400 50  0001 C CNN
+	1    1950 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 2550 0    50   Input ~ 0
+ACCEL_VCC
+Wire Wire Line
+	2700 2550 2450 2550
+Wire Wire Line
+	2350 2550 1950 2550
+Wire Wire Line
+	1950 2550 1650 2550
+Connection ~ 1950 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5BEA5D6C
+P 1950 2250
+F 0 "#PWR?" H 1950 2000 50  0001 C CNN
+F 1 "GND" H 1950 2150 50  0000 C CNN
+F 2 "" H 1950 2250 50  0001 C CNN
+F 3 "" H 1950 2250 50  0001 C CNN
+	1    1950 2250
+	-1   0    0    1   
+$EndComp
+Text GLabel 3200 4700 2    50   Input ~ 0
+Sensor_VCC
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BEA67EC
+P 2950 4500
+F 0 "J?" V 3010 4540 50  0000 L CNN
+F 1 "PRESSURE_SW" V 2900 4550 50  0000 L CNN
+F 2 "" H 2950 4500 50  0001 C CNN
+F 3 "~" H 2950 4500 50  0001 C CNN
+	1    2950 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BEA67F3
+P 2450 4550
+F 0 "C?" H 2565 4596 50  0000 L CNN
+F 1 "4700pF" H 2550 4700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2488 4400 50  0001 C CNN
+F 3 "~" H 2450 4550 50  0001 C CNN
+	1    2450 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 2150 4700 1    50   Input ~ 0
+PRESSURE_VCC
+Wire Wire Line
+	3200 4700 2950 4700
+Wire Wire Line
+	2850 4700 2450 4700
+Wire Wire Line
+	2450 4700 2150 4700
+Connection ~ 2450 4700
+Wire Notes Line
+	500  6650 3750 6650
+$Comp
+L power:GND #PWR?
+U 1 1 5BEA7B82
+P 2450 4400
+F 0 "#PWR?" H 2450 4150 50  0001 C CNN
+F 1 "GND" H 2500 4300 50  0000 R CNN
+F 2 "" H 2450 4400 50  0001 C CNN
+F 3 "" H 2450 4400 50  0001 C CNN
+	1    2450 4400
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	3750 3950 500  3950
+Wire Notes Line
+	3750 3950 3750 6650
+Wire Notes Line
+	500  3950 500  6650
 $EndSCHEMATC
