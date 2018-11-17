@@ -14,7 +14,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1950 1600 0    50   Input ~ 0
+Text GLabel 1800 1600 0    50   Input ~ 0
 GND
 Text GLabel 1950 1700 0    50   Input ~ 0
 uC_xbee_RX
@@ -28,10 +28,6 @@ Text GLabel 1950 2100 0    50   Input ~ 0
 uC_4_pwm-SDA2
 Text GLabel 1950 2200 0    50   Input ~ 0
 uC_5_pwm
-Text GLabel 1950 2600 0    50   Input ~ 0
-uC_9_RX2
-Text GLabel 1950 2700 0    50   Input ~ 0
-uC_10_TX2
 Text GLabel 1950 2800 0    50   Input ~ 0
 uC_11_MOSI0
 Text GLabel 1950 2900 0    50   Input ~ 0
@@ -108,9 +104,9 @@ Text GLabel 1950 3500 0    50   Input ~ 0
 uC_MOSI_433_trans
 Text GLabel 1950 3200 0    50   Input ~ 0
 uC_CS_433_trans
-Text GLabel 1950 2400 0    50   Input ~ 0
+Text GLabel 1950 2600 0    50   Input ~ 0
 uC_gps_RX
-Text GLabel 1950 2500 0    50   Input ~ 0
+Text GLabel 1950 2700 0    50   Input ~ 0
 uC_gps_TX
 Text GLabel 2900 3300 2    50   Input ~ 0
 uC_MISO_433_trans
@@ -153,11 +149,11 @@ Text GLabel 7500 4950 2    50   Input ~ 0
 uC_accel_y
 Text GLabel 7500 4850 2    50   Input ~ 0
 uC_accel_z
-Text GLabel 5500 4750 0    50   Input ~ 0
+Text GLabel 4300 4750 0    50   Input ~ 0
 uC_MISO_433_trans
 Text GLabel 5500 3150 0    50   Input ~ 0
 uC_MOSI_433_trans
-Text GLabel 5500 5250 0    50   Input ~ 0
+Text GLabel 4750 5250 0    50   Input ~ 0
 uC_SPI_SCK_433_trans
 Text GLabel 5500 2850 0    50   Input ~ 0
 uC_CS_433_trans
@@ -216,14 +212,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5BE1E842
-P 7500 4650
+P 8350 4800
 AR Path="/5BE1E842" Ref="#PWR?"  Part="1" 
 AR Path="/5BE1DDE1/5BE1E842" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 7500 4400 50  0001 C CNN
-F 1 "GND" V 7505 4522 50  0000 R CNN
-F 2 "" H 7500 4650 50  0001 C CNN
-F 3 "" H 7500 4650 50  0001 C CNN
-	1    7500 4650
+F 0 "#PWR010" H 8350 4550 50  0001 C CNN
+F 1 "GND" V 8355 4672 50  0000 R CNN
+F 2 "" H 8350 4800 50  0001 C CNN
+F 3 "" H 8350 4800 50  0001 C CNN
+	1    8350 4800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -351,4 +347,316 @@ Wire Wire Line
 Connection ~ 7700 4550
 Wire Wire Line
 	7700 4550 7500 4550
+$Comp
+L Device:R_US R?
+U 1 1 5BF159B7
+P 9300 3150
+F 0 "R?" H 9368 3196 50  0000 L CNN
+F 1 "1k" H 9368 3105 50  0000 L CNN
+F 2 "" V 9340 3140 50  0001 C CNN
+F 3 "~" H 9300 3150 50  0001 C CNN
+	1    9300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF15B53
+P 9300 3600
+F 0 "#PWR?" H 9300 3600 30  0001 C CNN
+F 1 "GND" H 9300 3530 30  0001 C CNN
+F 2 "" H 9300 3600 50  0001 C CNN
+F 3 "" H 9300 3600 50  0001 C CNN
+	1    9300 3600
+	1    0    0    -1  
+$EndComp
+Text Label 9300 2400 3    50   ~ 0
+433_HEARTBEAT
+Wire Wire Line
+	9300 3000 9300 2400
+Text Label 4300 4550 0    50   ~ 0
+433_HEARTBEAT
+Wire Wire Line
+	5500 4550 4300 4550
+Text GLabel 4300 4550 0    50   Input ~ 0
+uC_37-A18-SCL1
+$Comp
+L Device:LED D?
+U 1 1 5BF16FC2
+P 9300 3450
+F 0 "D?" V 9245 3529 50  0000 L CNN
+F 1 "433_Heartbeat" H 9300 3300 50  0000 L CNN
+F 2 "" H 9300 3450 50  0001 C CNN
+F 3 "~" H 9300 3450 50  0001 C CNN
+	1    9300 3450
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5BF1E466
+P 9650 3150
+F 0 "R?" H 9718 3196 50  0000 L CNN
+F 1 "1k" H 9718 3105 50  0000 L CNN
+F 2 "" V 9690 3140 50  0001 C CNN
+F 3 "~" H 9650 3150 50  0001 C CNN
+	1    9650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF1E46D
+P 9650 3600
+F 0 "#PWR?" H 9650 3600 30  0001 C CNN
+F 1 "GND" H 9650 3530 30  0001 C CNN
+F 2 "" H 9650 3600 50  0001 C CNN
+F 3 "" H 9650 3600 50  0001 C CNN
+	1    9650 3600
+	1    0    0    -1  
+$EndComp
+Text Label 9650 2400 3    50   ~ 0
+GPS_HEARTBEAT
+Wire Wire Line
+	9650 3000 9650 2400
+$Comp
+L Device:LED D?
+U 1 1 5BF1E475
+P 9650 3450
+F 0 "D?" V 9595 3529 50  0000 L CNN
+F 1 "GPS_Heartbeat" H 9650 3350 50  0000 L CNN
+F 2 "" H 9650 3450 50  0001 C CNN
+F 3 "~" H 9650 3450 50  0001 C CNN
+	1    9650 3450
+	0    1    -1   0   
+$EndComp
+Text GLabel 4300 4650 0    50   Input ~ 0
+uC_38-A19-SDA1
+Text Label 4300 4650 0    50   ~ 0
+GPS_HEARTBEAT
+Wire Wire Line
+	4300 4650 5500 4650
+$Comp
+L Device:R_US R?
+U 1 1 5BF25864
+P 9950 3150
+F 0 "R?" H 10018 3196 50  0000 L CNN
+F 1 "1k" H 10018 3105 50  0000 L CNN
+F 2 "" V 9990 3140 50  0001 C CNN
+F 3 "~" H 9950 3150 50  0001 C CNN
+	1    9950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF2586B
+P 9950 3600
+F 0 "#PWR?" H 9950 3600 30  0001 C CNN
+F 1 "GND" H 9950 3530 30  0001 C CNN
+F 2 "" H 9950 3600 50  0001 C CNN
+F 3 "" H 9950 3600 50  0001 C CNN
+	1    9950 3600
+	1    0    0    -1  
+$EndComp
+Text Label 9950 2400 3    50   ~ 0
+IMU_HEARTBEAT
+Wire Wire Line
+	9950 3000 9950 2400
+$Comp
+L Device:LED D?
+U 1 1 5BF25873
+P 9950 3450
+F 0 "D?" V 9895 3529 50  0000 L CNN
+F 1 "IMU_heartbeat" H 10000 3350 50  0000 L CNN
+F 2 "" H 9950 3450 50  0001 C CNN
+F 3 "~" H 9950 3450 50  0001 C CNN
+	1    9950 3450
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5BF25C00
+P 10250 3150
+F 0 "R?" H 10318 3196 50  0000 L CNN
+F 1 "1k" H 10318 3105 50  0000 L CNN
+F 2 "" V 10290 3140 50  0001 C CNN
+F 3 "~" H 10250 3150 50  0001 C CNN
+	1    10250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF25C07
+P 10250 3600
+F 0 "#PWR?" H 10250 3600 30  0001 C CNN
+F 1 "GND" H 10250 3530 30  0001 C CNN
+F 2 "" H 10250 3600 50  0001 C CNN
+F 3 "" H 10250 3600 50  0001 C CNN
+	1    10250 3600
+	1    0    0    -1  
+$EndComp
+Text Label 10250 2400 3    50   ~ 0
+MS0_HEARTBEAT
+Wire Wire Line
+	10250 3000 10250 2400
+$Comp
+L Device:LED D?
+U 1 1 5BF25C0F
+P 10250 3450
+F 0 "D?" V 10195 3529 50  0000 L CNN
+F 1 "MS0_heartbeat" H 10300 3350 50  0000 L CNN
+F 2 "" H 10250 3450 50  0001 C CNN
+F 3 "~" H 10250 3450 50  0001 C CNN
+	1    10250 3450
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5BF260B3
+P 10550 3150
+F 0 "R?" H 10618 3196 50  0000 L CNN
+F 1 "1k" H 10618 3105 50  0000 L CNN
+F 2 "" V 10590 3140 50  0001 C CNN
+F 3 "~" H 10550 3150 50  0001 C CNN
+	1    10550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF260BA
+P 10550 3600
+F 0 "#PWR?" H 10550 3600 30  0001 C CNN
+F 1 "GND" H 10550 3530 30  0001 C CNN
+F 2 "" H 10550 3600 50  0001 C CNN
+F 3 "" H 10550 3600 50  0001 C CNN
+	1    10550 3600
+	1    0    0    -1  
+$EndComp
+Text Label 10550 2400 3    50   ~ 0
+ACCEL_HEARTBEAT
+Wire Wire Line
+	10550 3000 10550 2400
+$Comp
+L Device:LED D?
+U 1 1 5BF260C2
+P 10550 3450
+F 0 "D?" V 10495 3529 50  0000 L CNN
+F 1 "ACCEL_heartbeat" H 10600 3350 50  0000 L CNN
+F 2 "" H 10550 3450 50  0001 C CNN
+F 3 "~" H 10550 3450 50  0001 C CNN
+	1    10550 3450
+	0    1    -1   0   
+$EndComp
+Text Label 4800 4850 0    50   ~ 0
+IMU_HEARTBEAT
+Wire Wire Line
+	5500 4750 4300 4750
+Wire Wire Line
+	5500 4850 4800 4850
+Text Label 4800 4950 0    50   ~ 0
+MS0_HEARTBEAT
+Wire Wire Line
+	5500 4950 4800 4950
+Text GLabel 4800 4850 0    50   Input ~ 0
+A21_DAC0
+Text GLabel 4800 4950 0    50   Input ~ 0
+A22_DAC1
+Text Label 4800 5350 0    50   ~ 0
+ACCEL_HEARTBEAT
+Wire Wire Line
+	4750 5250 5500 5250
+Wire Wire Line
+	5500 5350 4800 5350
+Text GLabel 4800 5350 0    50   Input ~ 0
+uC_15-A1-CS0
+Text GLabel 4750 5150 0    50   Input ~ 0
+uC_13-SCK0(LED)
+Wire Wire Line
+	4750 5150 5500 5150
+Text GLabel 4750 5450 0    50   Input ~ 0
+uC_16-A2-SCL0
+Wire Wire Line
+	4750 5450 5500 5450
+Text GLabel 5150 4250 0    50   Input ~ 0
+uC_34-A15-CAN1RX-SDA0-RX5
+Wire Wire Line
+	5500 4250 5150 4250
+Text GLabel 5150 4150 0    50   Input ~ 0
+uC_33-A14-CAN1TX-SCL0-TX5
+Wire Wire Line
+	5150 4150 5500 4150
+Text GLabel 5250 4050 0    50   Input ~ 0
+uC_433_reset
+Wire Wire Line
+	5250 4050 5500 4050
+Wire Wire Line
+	1800 1600 1850 1600
+Wire Wire Line
+	1850 1600 1850 1450
+Wire Wire Line
+	1850 1450 1650 1450
+Connection ~ 1850 1600
+Wire Wire Line
+	1850 1600 1950 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5BF27DAF
+P 1650 1450
+AR Path="/5BF27DAF" Ref="#PWR?"  Part="1" 
+AR Path="/5BE1DDE1/5BF27DAF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1650 1200 50  0001 C CNN
+F 1 "GND" V 1655 1322 50  0000 R CNN
+F 2 "" H 1650 1450 50  0001 C CNN
+F 3 "" H 1650 1450 50  0001 C CNN
+	1    1650 1450
+	0    1    1    0   
+$EndComp
+Text GLabel 5500 1550 0    50   Input ~ 0
+uC_2_pwm
+Text GLabel 5500 1650 0    50   Input ~ 0
+uC_3_pwm-SCL2
+Text GLabel 5500 1750 0    50   Input ~ 0
+uC_4_pwm-SDA2
+Text GLabel 5500 1850 0    50   Input ~ 0
+uC_5_pwm
+Text GLabel 5500 1950 0    50   Input ~ 0
+uC_6_pwm
+Text GLabel 5500 2450 0    50   Input ~ 0
+uC_11_MOSI0
+Text GLabel 5500 2550 0    50   Input ~ 0
+uC_12_MISO0
+Text GLabel 5500 2650 0    50   Input ~ 0
+uC_3V3
+Text GLabel 5500 2750 0    50   Input ~ 0
+uC_24_DIO
+Text GLabel 5500 2950 0    50   Input ~ 0
+uC_26_tx1
+Text GLabel 5500 3050 0    50   Input ~ 0
+uC_27_rx1-sck0
+Text GLabel 5500 3250 0    50   Input ~ 0
+uC_29_CAN0TX
+Text GLabel 5500 3350 0    50   Input ~ 0
+uC_30_CAN0RX
+Text GLabel 5500 3650 0    50   Input ~ 0
+uC_5Vin
+Text GLabel 8100 4650 2    50   Input ~ 0
+AGND
+Wire Wire Line
+	7500 4650 8000 4650
+Wire Wire Line
+	8000 4650 8000 4800
+Wire Wire Line
+	8000 4800 8350 4800
+Connection ~ 8000 4650
+Wire Wire Line
+	8000 4650 8100 4650
+Text GLabel 7500 5050 2    50   Input ~ 0
+uC_21-A6-CS0-MOSI1-rx1
+Text GLabel 7500 5450 2    50   Input ~ 0
+uC_17-A3-SDA0
+Text GLabel 5500 2050 0    50   Input ~ 0
+uC_RX3
+Text GLabel 5500 2150 0    50   Input ~ 0
+uC_TX3
+Text GLabel 1950 2400 0    50   Input ~ 0
+uC_RX3
+Text GLabel 1950 2500 0    50   Input ~ 0
+uC_TX3
 $EndSCHEMATC

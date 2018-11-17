@@ -991,4 +991,49 @@ F 3 "" H 8900 6100 50  0001 C CNN
 	1    8900 6100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x08_Female J13
+U 1 1 5BF066AF
+P 2150 5650
+F 0 "J13" H 2177 5626 50  0000 L CNN
+F 1 "DEBUG_BREAKOUT_433" H 2177 5535 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2150 5650 50  0001 C CNN
+F 3 "~" H 2150 5650 50  0001 C CNN
+	1    2150 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 5350 0    50   Input ~ 0
+uC_433_reset
+Text GLabel 1950 5450 0    50   Input ~ 0
+uC_SPI_SCK_433_trans
+Text GLabel 1950 5550 0    50   Input ~ 0
+uC_MOSI_433_trans
+Text GLabel 1950 5750 0    50   Input ~ 0
+uC_CS_433_trans
+Text GLabel 1950 5650 0    50   Input ~ 0
+uC_MISO_433_trans
+Text Label 950  5850 0    50   ~ 0
+GPIO0
+Text Label 950  5950 0    50   ~ 0
+GPIO2
+Text Label 950  6050 0    50   ~ 0
+GPIO3
+Wire Wire Line
+	1950 6050 950  6050
+Wire Wire Line
+	950  5950 1950 5950
+Wire Wire Line
+	1950 5850 950  5850
+Text Label 3850 5800 0    50   ~ 0
+GPIO0
+Text Label 3850 6000 0    50   ~ 0
+GPIO2
+Text Label 3850 6100 0    50   ~ 0
+GPIO3
+Wire Wire Line
+	4850 6100 3850 6100
+Wire Wire Line
+	3850 6000 4850 6000
+Wire Wire Line
+	4850 5800 3850 5800
 $EndSCHEMATC
