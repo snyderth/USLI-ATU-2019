@@ -232,12 +232,12 @@ Wire Wire Line
 Wire Wire Line
 	9300 1600 9300 2850
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J9
 U 1 1 5BEA1A20
 P 6600 2100
-F 0 "J?" H 6400 2000 50  0000 C CNN
+F 0 "J9" H 6400 2000 50  0000 C CNN
 F 1 "GPS_SW" H 6400 2100 50  0000 C CNN
-F 2 "" H 6600 2100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6600 2100 50  0001 C CNN
 F 3 "~" H 6600 2100 50  0001 C CNN
 	1    6600 2100
 	1    0    0    -1  
