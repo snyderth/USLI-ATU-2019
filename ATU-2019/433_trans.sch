@@ -53,39 +53,8 @@ F 3 "" H 2250 2300 50  0001 C CNN
 	1    2250 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 2000 2650 2000
 Text GLabel 2800 2000 2    50   Input ~ 0
-433_VCC
-$Comp
-L Device:C C?
-U 1 1 5BE59F9A
-P 2650 2150
-AR Path="/5BE1F523/5BE59F9A" Ref="C?"  Part="1" 
-AR Path="/5BE56F77/5BE59F9A" Ref="C14"  Part="1" 
-F 0 "C14" H 2765 2196 50  0000 L CNN
-F 1 "4700pF" H 2765 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 2000 50  0001 C CNN
-F 3 "~" H 2650 2150 50  0001 C CNN
-	1    2650 2150
-	1    0    0    -1  
-$EndComp
-Connection ~ 2650 2000
-Wire Wire Line
-	2650 2000 2800 2000
-$Comp
-L power:GND #PWR?
-U 1 1 5BE59FA3
-P 2650 2300
-AR Path="/5BE1F523/5BE59FA3" Ref="#PWR?"  Part="1" 
-AR Path="/5BE56F77/5BE59FA3" Ref="#PWR039"  Part="1" 
-F 0 "#PWR039" H 2650 2050 50  0001 C CNN
-F 1 "GND" H 2655 2127 50  0000 C CNN
-F 2 "" H 2650 2300 50  0001 C CNN
-F 3 "" H 2650 2300 50  0001 C CNN
-	1    2650 2300
-	1    0    0    -1  
-$EndComp
+433_VCC_IN
 $Comp
 L CC1200RHBT:CC1200RHBT U13
 U 1 1 5BE5A4A5
@@ -1016,4 +985,56 @@ F 3 "" H 10050 5800 60  0000 C CNN
 	1    10050 5800
 	0    1    1    0   
 $EndComp
+Text GLabel 3650 1300 2    50   Input ~ 0
+433_VCC_IN
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BF46A99
+P 3400 1100
+AR Path="/5BE46730/5BF46A99" Ref="J?"  Part="1" 
+AR Path="/5BE56F77/5BF46A99" Ref="J14"  Part="1" 
+F 0 "J14" V 3460 1140 50  0000 L CNN
+F 1 "ACCEL_SW" V 3350 1150 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3400 1100 50  0001 C CNN
+F 3 "~" H 3400 1100 50  0001 C CNN
+	1    3400 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BF46AA0
+P 2900 1150
+AR Path="/5BE46730/5BF46AA0" Ref="C?"  Part="1" 
+AR Path="/5BE56F77/5BF46AA0" Ref="C14"  Part="1" 
+F 0 "C14" H 3015 1196 50  0000 L CNN
+F 1 "4700pF" H 3000 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2938 1000 50  0001 C CNN
+F 3 "~" H 2900 1150 50  0001 C CNN
+	1    2900 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 1300 0    50   Input ~ 0
+433_VCC
+Wire Wire Line
+	3650 1300 3400 1300
+Wire Wire Line
+	3300 1300 2900 1300
+Wire Wire Line
+	2900 1300 2600 1300
+Connection ~ 2900 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5BF46AAC
+P 2900 1000
+AR Path="/5BE46730/5BF46AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5BE56F77/5BF46AAC" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 2900 750 50  0001 C CNN
+F 1 "GND" H 2900 900 50  0000 C CNN
+F 2 "" H 2900 1000 50  0001 C CNN
+F 3 "" H 2900 1000 50  0001 C CNN
+	1    2900 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 2000 2800 2000
 $EndSCHEMATC

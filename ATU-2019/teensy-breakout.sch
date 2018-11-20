@@ -623,7 +623,7 @@ uC_11_MOSI0
 Text GLabel 5500 2550 0    50   Input ~ 0
 uC_12_MISO0
 Text GLabel 5500 2650 0    50   Input ~ 0
-uC_3V3
+uC_3V3_OUT
 Text GLabel 5500 2750 0    50   Input ~ 0
 uC_24_DIO
 Text GLabel 5500 2950 0    50   Input ~ 0
@@ -659,4 +659,37 @@ Text GLabel 1950 2400 0    50   Input ~ 0
 uC_RX3
 Text GLabel 1950 2500 0    50   Input ~ 0
 uC_TX3
+Text Notes 8550 4050 0    50   ~ 0
+Make sure that all power connections are 5v tolerant inputs
+NoConn ~ 7500 4750
+NoConn ~ 7500 4450
+NoConn ~ 7500 4350
+NoConn ~ 7500 4250
+NoConn ~ 7500 4150
+NoConn ~ 7500 4050
+NoConn ~ 7500 3950
+NoConn ~ 7500 3850
+NoConn ~ 7500 3550
+NoConn ~ 5500 3950
+NoConn ~ 7500 3450
+NoConn ~ 7500 3350
+NoConn ~ 7500 3250
+NoConn ~ 7500 3150
+NoConn ~ 7500 3050
+NoConn ~ 7500 2950
+NoConn ~ 7500 2850
+NoConn ~ 7500 2750
+NoConn ~ 7500 2650
+NoConn ~ 7500 2550
+NoConn ~ 7500 2250
+NoConn ~ 7500 2150
+NoConn ~ 7500 2050
+NoConn ~ 7500 1950
+NoConn ~ 7500 1850
+NoConn ~ 7500 1750
+NoConn ~ 7500 1650
+NoConn ~ 7500 1550
+NoConn ~ 7500 1450
+NoConn ~ 7500 1350
+NoConn ~ 7500 1250
 $EndSCHEMATC

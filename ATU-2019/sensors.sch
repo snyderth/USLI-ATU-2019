@@ -679,4 +679,6 @@ Connection ~ 10100 2700
 Connection ~ 10100 2600
 Wire Wire Line
 	10100 2600 10100 2700
+Text Notes 2150 6500 0    50   ~ 0
+Make JP5 a screw terminal pinout\n
 $EndSCHEMATC
