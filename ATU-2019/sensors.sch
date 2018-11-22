@@ -73,153 +73,10 @@ F 3 "" H 6000 3400 50  0001 C CNN
 $EndComp
 Text GLabel 6300 3100 2    50   Input ~ 0
 Sensor_VCC
-$Comp
-L BNO055:BNO055 U11
-U 1 1 5BE4D546
-P 9300 2300
-F 0 "U11" H 9300 3067 50  0000 C CNN
-F 1 "BNO055" H 9300 2976 50  0000 C CNN
-F 2 "BNO055:LGA28R50P4X10_380X520X100" H 9300 2300 50  0001 L BNN
-F 3 "Bosch" H 9300 2300 50  0001 L BNN
-F 4 "BNO055 9-axis Absolute Orientation Sensor _ SiP _ w/Sensors and Sensor Fusion" H 9300 2300 50  0001 L BNN "Field4"
-F 5 "Unavailable" H 9300 2300 50  0001 L BNN "Field5"
-F 6 "LGA-28 Bosch" H 9300 2300 50  0001 L BNN "Field6"
-F 7 "BNO055" H 9300 2300 50  0001 L BNN "Field7"
-F 8 "None" H 9300 2300 50  0001 L BNN "Field8"
-	1    9300 2300
-	1    0    0    -1  
-$EndComp
-Text GLabel 8500 2400 0    50   Input ~ 0
-uC_IMU_RX
-Text GLabel 8500 2500 0    50   Input ~ 0
-uC_IMU_TX
-$Comp
-L Device:Crystal Y1
-U 1 1 5BE4E8F4
-P 8200 1100
-F 0 "Y1" H 8200 1368 50  0000 C CNN
-F 1 "32.768kHz" H 8200 1277 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_7050-2Pin_7.0x5.0mm_HandSoldering" H 8200 1100 50  0001 C CNN
-F 3 "~" H 8200 1100 50  0001 C CNN
-	1    8200 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C11
-U 1 1 5BE4E969
-P 8050 1450
-F 0 "C11" H 7800 1500 50  0000 L CNN
-F 1 "22pF" H 7750 1400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8088 1300 50  0001 C CNN
-F 3 "~" H 8050 1450 50  0001 C CNN
-	1    8050 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 5BE4E9BD
-P 8350 1450
-F 0 "C12" H 8465 1496 50  0000 L CNN
-F 1 "22pF" H 8465 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8388 1300 50  0001 C CNN
-F 3 "~" H 8350 1450 50  0001 C CNN
-	1    8350 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8350 1100 8350 1300
-Wire Wire Line
-	8050 1100 8050 1300
-Wire Wire Line
-	8050 1600 8200 1600
-$Comp
-L power:GND #PWR033
-U 1 1 5BE4EAEA
-P 8200 1600
-F 0 "#PWR033" H 8200 1350 50  0001 C CNN
-F 1 "GND" H 8200 1500 50  0000 C CNN
-F 2 "" H 8200 1600 50  0001 C CNN
-F 3 "" H 8200 1600 50  0001 C CNN
-	1    8200 1600
-	1    0    0    -1  
-$EndComp
-Connection ~ 8200 1600
-Wire Wire Line
-	8200 1600 8350 1600
-Wire Wire Line
-	8350 1100 8800 1100
-Connection ~ 8350 1100
-Wire Wire Line
-	8050 1100 7550 1100
-Connection ~ 8050 1100
-Text Label 8800 1100 2    50   ~ 0
-IMU_XIN32
-Text Label 7550 1100 0    50   ~ 0
-IMU_XOUT32
-Text Label 8100 2000 0    50   ~ 0
-IMU_XIN32
-Wire Wire Line
-	8100 2000 8500 2000
-Text Label 10550 2100 2    50   ~ 0
-IMU_XOUT32
-Wire Wire Line
-	10100 2100 10550 2100
-$Comp
-L Device:C C13
-U 1 1 5BE4F491
-P 8350 2900
-F 0 "C13" V 8200 2900 50  0000 C CNN
-F 1 "0.1uF" V 8511 2900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8388 2750 50  0001 C CNN
-F 3 "~" H 8350 2900 50  0001 C CNN
-	1    8350 2900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR034
-U 1 1 5BE4F54B
-P 8200 2900
-F 0 "#PWR034" H 8200 2650 50  0001 C CNN
-F 1 "GND" V 8205 2772 50  0000 R CNN
-F 2 "" H 8200 2900 50  0001 C CNN
-F 3 "" H 8200 2900 50  0001 C CNN
-	1    8200 2900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8500 2700 8500 2600
-$Comp
-L power:GND #PWR035
-U 1 1 5BE4F673
-P 8500 2600
-F 0 "#PWR035" H 8500 2350 50  0001 C CNN
-F 1 "GND" V 8505 2472 50  0000 R CNN
-F 2 "" H 8500 2600 50  0001 C CNN
-F 3 "" H 8500 2600 50  0001 C CNN
-	1    8500 2600
-	0    1    1    0   
-$EndComp
-Connection ~ 8500 2600
-$Comp
-L power:GND #PWR036
-U 1 1 5BE4F6B8
-P 10100 2900
-F 0 "#PWR036" H 10100 2650 50  0001 C CNN
-F 1 "GND" V 10105 2772 50  0000 R CNN
-F 2 "" H 10100 2900 50  0001 C CNN
-F 3 "" H 10100 2900 50  0001 C CNN
-	1    10100 2900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10100 2800 10100 2900
-Connection ~ 10100 2900
 Wire Notes Line
 	7300 4000 10750 4000
 Wire Notes Line
 	10750 750  7300 750 
-Text HLabel 10600 850  0    50   Input ~ 0
-9-axis_IMU
 $Comp
 L _sensors:ADXL377 U9
 U 1 1 5BE4FED0
@@ -247,7 +104,7 @@ $EndComp
 Connection ~ 1900 1650
 Wire Wire Line
 	1900 1450 1900 1350
-Text GLabel 1900 1350 0    50   Input ~ 0
+Text GLabel 1750 1350 0    50   Input ~ 0
 ACCEL_VCC
 Wire Wire Line
 	3400 1550 3450 1550
@@ -352,8 +209,6 @@ Wire Notes Line
 	1200 3200 1200 1000
 Wire Notes Line
 	1200 1000 4500 1000
-Text HLabel 2250 3050 0    50   Input ~ 0
-High-G-Accelerometer
 $Comp
 L MS580314BA01-00:MS580314BA01-00 U8
 U 1 1 5BE52E3B
@@ -387,30 +242,8 @@ Text GLabel 1700 5500 0    50   Input ~ 0
 Sensor_VCC
 Wire Wire Line
 	1700 5400 1150 5400
-$Comp
-L Device:Jumper_NC_Dual JP5
-U 1 1 5BE54623
-P 1050 5400
-F 0 "JP5" V 1096 5502 50  0000 L CNN
-F 1 "I2C_ADDR" V 1005 5502 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 1050 5400 50  0001 C CNN
-F 3 "~" H 1050 5400 50  0001 C CNN
-	1    1050 5400
-	0    -1   -1   0   
-$EndComp
-Text GLabel 1050 5150 1    50   Input ~ 0
+Text GLabel 1150 5150 1    50   Input ~ 0
 PRESSURE_VCC
-$Comp
-L power:GND #PWR024
-U 1 1 5BE54780
-P 1050 5650
-F 0 "#PWR024" H 1050 5400 50  0001 C CNN
-F 1 "GND" H 1055 5477 50  0000 C CNN
-F 2 "" H 1050 5650 50  0001 C CNN
-F 3 "" H 1050 5650 50  0001 C CNN
-	1    1050 5650
-	1    0    0    -1  
-$EndComp
 Text Notes 600  6050 0    50   ~ 0
 Jumper GND means \nI2C address is 0x77
 Text Notes 700  4500 0    50   ~ 0
@@ -459,8 +292,6 @@ Text GLabel 1650 4900 1    50   Input ~ 0
 PRESSURE_VCC
 Text GLabel 1650 5950 3    50   Input ~ 0
 PRESSURE_VCC
-Text HLabel 3300 4300 0    50   Input ~ 0
-Pressure_Sensor
 Wire Wire Line
 	6000 3100 6150 3100
 Connection ~ 6000 3100
@@ -515,16 +346,6 @@ Wire Wire Line
 Wire Wire Line
 	9350 1200 9050 1200
 Connection ~ 9350 1200
-Text GLabel 10100 1800 2    50   Input ~ 0
-BNO_VCC
-Text GLabel 10100 1900 2    50   Input ~ 0
-BNO_VCC
-Text GLabel 10100 2200 2    50   Input ~ 0
-BNO_VCC
-Text GLabel 7650 2100 0    50   Input ~ 0
-BNO_VCC
-Text GLabel 7700 2300 0    50   Input ~ 0
-BNO_VCC
 Text GLabel 2700 2550 2    50   Input ~ 0
 Sensor_VCC
 $Comp
@@ -625,60 +446,436 @@ Wire Notes Line
 	10750 750  10750 4000
 Wire Notes Line
 	7300 750  7300 4000
-$Comp
-L Device:R_US R19
-U 1 1 5BEA7BE1
-P 7850 2300
-F 0 "R19" V 8050 2300 50  0000 C CNN
-F 1 "10k" V 7950 2300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7890 2290 50  0001 C CNN
-F 3 "~" H 7850 2300 50  0001 C CNN
-	1    7850 2300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R18
-U 1 1 5BEA7D80
-P 7800 2100
-F 0 "R18" V 7600 2100 50  0000 C CNN
-F 1 "10k" V 7686 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7840 2090 50  0001 C CNN
-F 3 "~" H 7800 2100 50  0001 C CNN
-	1    7800 2100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7950 2100 8500 2100
-Wire Wire Line
-	8500 2300 8000 2300
-$Comp
-L power:GND #PWR0114
-U 1 1 5BEAA955
-P 8500 1800
-F 0 "#PWR0114" H 8500 1550 50  0001 C CNN
-F 1 "GND" V 8400 1750 50  0000 C CNN
-F 2 "" H 8500 1800 50  0001 C CNN
-F 3 "" H 8500 1800 50  0001 C CNN
-	1    8500 1800
-	0    1    1    0   
-$EndComp
-Text GLabel 8300 1850 0    50   Input ~ 0
-BNO_VCC
-Wire Wire Line
-	8300 1850 8450 1850
-Wire Wire Line
-	8450 1850 8450 1900
-Wire Wire Line
-	8450 1900 8500 1900
-Wire Wire Line
-	10100 2700 10100 2800
-Connection ~ 10100 2800
-Wire Wire Line
-	10100 2500 10100 2600
-Connection ~ 10100 2700
-Connection ~ 10100 2600
-Wire Wire Line
-	10100 2600 10100 2700
 Text Notes 2150 6500 0    50   ~ 0
 Make JP5 a screw terminal pinout\n
+$Comp
+L MPU-6050:MPU-6050 U14
+U 1 1 5BF5C2C7
+P 6400 5500
+F 0 "U14" H 6400 6567 50  0000 C CNN
+F 1 "MPU-6050" H 6400 6476 50  0000 C CNN
+F 2 "MPU-6050:QFN50P400X400X95-24N" H 6400 5500 50  0001 L BNN
+F 3 "QFN-24 InvenSense" H 6400 5500 50  0001 L BNN
+F 4 "MPU-6050" H 6400 5500 50  0001 L BNN "Field4"
+F 5 "https://www.digikey.com/product-detail/en/tdk-invensense/MPU-6050/1428-1007-1-ND/4038010?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 6400 5500 50  0001 L BNN "Field5"
+F 6 "TDK InvenSense" H 6400 5500 50  0001 L BNN "Field6"
+F 7 "1428-1007-1-ND" H 6400 5500 50  0001 L BNN "Field7"
+F 8 "3-axis gyroscope, 3-axis accelerometer in a 4x4x0.9 housing" H 6400 5500 50  0001 L BNN "Field8"
+	1    6400 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C45
+U 1 1 5BF5C463
+P 7300 5700
+F 0 "C45" V 7048 5700 50  0000 C CNN
+F 1 "2.2nF" V 7139 5700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7338 5550 50  0001 C CNN
+F 3 "~" H 7300 5700 50  0001 C CNN
+	1    7300 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L ATU-2019-eagle-import:GND #GND0101
+U 1 1 5BF5C8BA
+P 7550 5700
+F 0 "#GND0101" H 7550 5700 50  0001 C CNN
+F 1 "GND" V 7550 5631 59  0000 R CNN
+F 2 "" H 7550 5700 50  0001 C CNN
+F 3 "" H 7550 5700 50  0001 C CNN
+	1    7550 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 5700 7150 5700
+$Comp
+L Device:C C46
+U 1 1 5BF5D5D6
+P 7300 6000
+F 0 "C46" V 7150 6000 50  0000 C CNN
+F 1 "0.1uF" V 7450 6000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7338 5850 50  0001 C CNN
+F 3 "~" H 7300 6000 50  0001 C CNN
+	1    7300 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L ATU-2019-eagle-import:GND #GND0102
+U 1 1 5BF5D5DD
+P 7550 6000
+F 0 "#GND0102" H 7550 6000 50  0001 C CNN
+F 1 "GND" V 7550 5931 59  0000 R CNN
+F 2 "" H 7550 6000 50  0001 C CNN
+F 3 "" H 7550 6000 50  0001 C CNN
+	1    7550 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 6000 7150 6000
+Wire Wire Line
+	7000 5800 7000 6000
+$Comp
+L ATU-2019-eagle-import:GND #GND0103
+U 1 1 5BF5F0F8
+P 7100 6300
+F 0 "#GND0103" H 7100 6300 50  0001 C CNN
+F 1 "GND" V 7100 6231 59  0000 R CNN
+F 2 "" H 7100 6300 50  0001 C CNN
+F 3 "" H 7100 6300 50  0001 C CNN
+	1    7100 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ATU-2019-eagle-import:GND #GND0104
+U 1 1 5BF5F1B6
+P 5700 5500
+F 0 "#GND0104" H 5700 5500 50  0001 C CNN
+F 1 "GND" V 5700 5431 59  0000 R CNN
+F 2 "" H 5700 5500 50  0001 C CNN
+F 3 "" H 5700 5500 50  0001 C CNN
+	1    5700 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L ATU-2019-eagle-import:GND #GND0105
+U 1 1 5BF5F240
+P 5800 4900
+F 0 "#GND0105" H 5800 4900 50  0001 C CNN
+F 1 "GND" H 5800 4779 59  0000 C CNN
+F 2 "" H 5800 4900 50  0001 C CNN
+F 3 "" H 5800 4900 50  0001 C CNN
+	1    5800 4900
+	-1   0    0    1   
+$EndComp
+Text GLabel 5800 7300 2    50   Input ~ 0
+Sensor_VCC
+$Comp
+L Connector:Conn_01x02_Male J19
+U 1 1 5BF6013E
+P 5550 7100
+F 0 "J19" V 5610 7140 50  0000 L CNN
+F 1 "MPU_SW" V 5500 7150 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5550 7100 50  0001 C CNN
+F 3 "~" H 5550 7100 50  0001 C CNN
+	1    5550 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C44
+U 1 1 5BF60145
+P 5050 7150
+F 0 "C44" H 5165 7196 50  0000 L CNN
+F 1 "4700pF" H 5150 7300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5088 7000 50  0001 C CNN
+F 3 "~" H 5050 7150 50  0001 C CNN
+	1    5050 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5BF6014C
+P 5050 7000
+F 0 "#PWR0116" H 5050 6750 50  0001 C CNN
+F 1 "GND" H 5050 6900 50  0000 C CNN
+F 2 "" H 5050 7000 50  0001 C CNN
+F 3 "" H 5050 7000 50  0001 C CNN
+	1    5050 7000
+	-1   0    0    1   
+$EndComp
+Text GLabel 4750 7300 0    50   Input ~ 0
+MPU_VCC
+Wire Wire Line
+	5800 7300 5550 7300
+Wire Wire Line
+	5450 7300 5050 7300
+Wire Wire Line
+	5050 7300 4750 7300
+Connection ~ 5050 7300
+Text GLabel 7200 4700 1    50   Input ~ 0
+MPU_VCC
+$Comp
+L ATU-2019-eagle-import:GND #GND0106
+U 1 1 5BF63465
+P 7850 4800
+F 0 "#GND0106" H 7850 4800 50  0001 C CNN
+F 1 "GND" V 7850 4731 59  0000 R CNN
+F 2 "" H 7850 4800 50  0001 C CNN
+F 3 "" H 7850 4800 50  0001 C CNN
+	1    7850 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C47
+U 1 1 5BF634E2
+P 7600 4800
+F 0 "C47" V 7450 4800 50  0000 C CNN
+F 1 "0.1uF" V 7750 4800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7638 4650 50  0001 C CNN
+F 3 "~" H 7600 4800 50  0001 C CNN
+	1    7600 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 5200 5150 5200
+$Comp
+L Connector:Conn_01x03_Male J18
+U 1 1 5BF6883A
+P 4950 5200
+F 0 "J18" H 5000 5400 50  0000 C CNN
+F 1 "ADDR_SEL_MPU" V 4850 5200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4950 5200 50  0001 C CNN
+F 3 "~" H 4950 5200 50  0001 C CNN
+	1    4950 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 4850 1    50   Input ~ 0
+MPU_VCC
+$Comp
+L ATU-2019-eagle-import:GND #GND0107
+U 1 1 5BF68BBF
+P 5150 5500
+F 0 "#GND0107" H 5150 5500 50  0001 C CNN
+F 1 "GND" H 5150 5379 59  0000 C CNN
+F 2 "" H 5150 5500 50  0001 C CNN
+F 3 "" H 5150 5500 50  0001 C CNN
+	1    5150 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4850 5150 5100
+Wire Wire Line
+	5150 5300 5150 5400
+Text Notes 4050 5800 0    50   ~ 0
+Logic low Addr: 0x68 (Default)
+Text Notes 4850 4400 0    50   ~ 0
+Logic high Addr: 0x69 (Alternate)
+Text GLabel 5350 6400 3    50   Input ~ 0
+uC_SCL
+Text GLabel 5500 6400 3    50   Input ~ 0
+uC_SDA
+Text GLabel 4700 6300 0    50   Input ~ 0
+MPU_VCC
+Text GLabel 4700 6000 0    50   Input ~ 0
+MPU_VCC
+$Comp
+L Device:R_US R20
+U 1 1 5BF6EC18
+P 4850 6000
+F 0 "R20" V 4950 6000 50  0000 C CNN
+F 1 "10k" V 4736 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4890 5990 50  0001 C CNN
+F 3 "~" H 4850 6000 50  0001 C CNN
+	1    4850 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R21
+U 1 1 5BF6FEC9
+P 4850 6300
+F 0 "R21" V 4950 6300 50  0000 C CNN
+F 1 "10k" V 4736 6300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4890 6290 50  0001 C CNN
+F 3 "~" H 4850 6300 50  0001 C CNN
+	1    4850 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 6400 5350 6000
+Wire Wire Line
+	5350 5700 5800 5700
+Wire Wire Line
+	5800 5800 5500 5800
+Wire Wire Line
+	5000 6000 5350 6000
+Connection ~ 5350 6000
+Wire Wire Line
+	5350 6000 5350 5700
+Wire Wire Line
+	5000 6300 5500 6300
+Wire Wire Line
+	5500 5800 5500 6300
+Connection ~ 5500 6300
+Wire Wire Line
+	5500 6300 5500 6400
+$Comp
+L Connector:Conn_01x03_Male J17
+U 1 1 5BF78B52
+P 950 5400
+F 0 "J17" H 1000 5600 50  0000 C CNN
+F 1 "ADDR_SEL_PRESSURE" V 850 5400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 950 5400 50  0001 C CNN
+F 3 "~" H 950 5400 50  0001 C CNN
+	1    950  5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATU-2019-eagle-import:GND #GND0108
+U 1 1 5BF7A526
+P 1150 5750
+F 0 "#GND0108" H 1150 5750 50  0001 C CNN
+F 1 "GND" H 1150 5629 59  0000 C CNN
+F 2 "" H 1150 5750 50  0001 C CNN
+F 3 "" H 1150 5750 50  0001 C CNN
+	1    1150 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 5500 1150 5650
+Wire Wire Line
+	1150 5300 1150 5150
+Wire Notes Line
+	6850 7550 6850 6450
+Wire Notes Line
+	8800 6450 8800 4250
+Wire Notes Line
+	4000 4250 4000 7550
+Wire Notes Line
+	4000 7550 6850 7550
+Text Label 5200 5200 0    50   ~ 0
+MPU_ADR_SEL
+Text Label 5400 5700 0    50   ~ 0
+MPU_SCL
+Text Label 5500 6150 1    50   ~ 0
+MPU_SDA
+Wire Wire Line
+	7000 4800 7300 4800
+Text Label 7350 4800 2    50   ~ 0
+MPU_VIO
+NoConn ~ 7000 5200
+NoConn ~ 7000 5300
+NoConn ~ 7000 5400
+NoConn ~ 7000 5500
+Text Label 5350 5100 0    50   ~ 0
+MPU_XCL
+Wire Wire Line
+	5800 5100 5350 5100
+Text Label 5750 6350 1    50   ~ 0
+MPU_XDA
+Wire Wire Line
+	5800 6000 5750 6000
+Wire Wire Line
+	5750 6000 5750 6350
+$Comp
+L Connector:Conn_01x06_Male J20
+U 1 1 5BF9957D
+P 7950 5450
+F 0 "J20" H 8056 5828 50  0000 C CNN
+F 1 "MPU_BREAKOUT" V 7900 5400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7950 5450 50  0001 C CNN
+F 3 "~" H 7950 5450 50  0001 C CNN
+	1    7950 5450
+	1    0    0    -1  
+$EndComp
+Text Label 8700 5250 2    50   ~ 0
+MPU_VIO
+Wire Wire Line
+	8700 5250 8150 5250
+Wire Wire Line
+	8150 5350 8700 5350
+Wire Wire Line
+	8150 5450 8700 5450
+Wire Wire Line
+	8150 5550 8700 5550
+Wire Wire Line
+	8150 5650 8700 5650
+Wire Wire Line
+	8150 5750 8700 5750
+Text Label 8700 5350 2    50   ~ 0
+MPU_XCL
+Text Label 8700 5450 2    50   ~ 0
+MPU_XDA
+Text Label 8700 5550 2    50   ~ 0
+MPU_SCL
+Text Label 8700 5650 2    50   ~ 0
+MPU_SDA
+Text Label 8700 5750 2    50   ~ 0
+MPU_ADR_SEL
+Wire Notes Line
+	6850 6450 8800 6450
+Wire Notes Line
+	4000 4250 8800 4250
+Wire Wire Line
+	1750 1350 1850 1350
+Connection ~ 1900 1350
+Wire Wire Line
+	7000 4700 7050 4700
+NoConn ~ 2900 5600
+$Comp
+L power:PWR_FLAG #FLG0114
+U 1 1 5BFE47CB
+P 7050 4700
+F 0 "#FLG0114" H 7050 4970 30  0001 C CNN
+F 1 "PWR_FLAG" H 7050 4958 30  0000 C CNN
+F 2 "" H 7050 4700 50  0001 C CNN
+F 3 "" H 7050 4700 50  0001 C CNN
+	1    7050 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 4700
+Wire Wire Line
+	7050 4700 7200 4700
+$Comp
+L power:PWR_FLAG #FLG0115
+U 1 1 5BFE4852
+P 7300 4800
+F 0 "#FLG0115" H 7300 5070 30  0001 C CNN
+F 1 "PWR_FLAG" H 7300 5057 30  0000 C CNN
+F 2 "" H 7300 4800 50  0001 C CNN
+F 3 "" H 7300 4800 50  0001 C CNN
+	1    7300 4800
+	-1   0    0    1   
+$EndComp
+Connection ~ 7300 4800
+Wire Wire Line
+	7300 4800 7450 4800
+$Comp
+L power:PWR_FLAG #FLG0116
+U 1 1 5BFE51CE
+P 1850 1350
+F 0 "#FLG0116" H 1850 1620 30  0001 C CNN
+F 1 "PWR_FLAG" H 1850 1608 30  0000 C CNN
+F 2 "" H 1850 1350 50  0001 C CNN
+F 3 "" H 1850 1350 50  0001 C CNN
+	1    1850 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 1350
+Wire Wire Line
+	1850 1350 1900 1350
+$Comp
+L BNO055:Adafruit_BNO055_breakout U11
+U 1 1 5BFEFB84
+P 8750 2150
+F 0 "U11" H 9228 2146 50  0000 L CNN
+F 1 "Adafruit_BNO055_breakout" H 9228 2055 50  0000 L CNN
+F 2 "BNO:Adafruit_BNO055_breakout" H 8750 2250 50  0001 C CNN
+F 3 "" H 8750 2250 50  0001 C CNN
+	1    8750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5BFEFC95
+P 8650 2700
+F 0 "#PWR0114" H 8650 2700 30  0001 C CNN
+F 1 "GND" H 8650 2630 30  0001 C CNN
+F 2 "" H 8650 2700 50  0001 C CNN
+F 3 "" H 8650 2700 50  0001 C CNN
+	1    8650 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2550 8650 2700
+Text GLabel 8450 2550 3    50   Input ~ 0
+BNO_VCC
+Text GLabel 8950 2550 3    50   Input ~ 0
+uC_SCL
+Text GLabel 8850 2550 3    50   Input ~ 0
+uC_SDA
+NoConn ~ 9050 2550
+NoConn ~ 8550 2550
+NoConn ~ 8500 1850
+NoConn ~ 8650 1850
+NoConn ~ 8850 1850
+NoConn ~ 9000 1850
 $EndSCHEMATC

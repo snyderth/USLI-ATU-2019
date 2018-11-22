@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RF_ZigBee:XBee_SMT U4
-U 1 1 5BE1F192
-P 5150 3450
-F 0 "U4" H 5150 3750 50  0000 C CNN
-F 1 "XBee_SMT" H 5100 3650 50  0000 C CNN
-F 2 "RF_Module:Digi_XBee_SMT" H 5990 2390 50  0001 C CNN
-F 3 "http://www.digi.com/resources/documentation/digidocs/pdfs/90002126.pdf" H 5150 3050 50  0001 C CNN
-	1    5150 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:LM1085-3.3 U3
 U 1 1 5BE1F199
 P 2350 1950
@@ -60,57 +49,25 @@ F 3 "" H 2050 1950 50  0001 C CNN
 $EndComp
 Text GLabel 2650 1950 2    50   Input ~ 0
 XBEE_3V3
-Text GLabel 5150 2150 1    50   Input ~ 0
-XBEE_VCC
 Text GLabel 4150 1800 2    50   Input ~ 0
 uC_xbee_RX
 Text GLabel 3650 1800 0    50   Input ~ 0
 uC_xbee_TX
-Text GLabel 7100 2750 2    50   Input ~ 0
-xbee_RSSI_out
-Wire Wire Line
-	4950 4550 5050 4550
-Connection ~ 5050 4550
-Wire Wire Line
-	5050 4550 5150 4550
-Connection ~ 5150 4550
-Wire Wire Line
-	5150 4550 5250 4550
-Connection ~ 5250 4550
-Wire Wire Line
-	5250 4550 5350 4550
-$Comp
-L power:GND #PWR014
-U 1 1 5BE1D0E5
-P 5150 4550
-F 0 "#PWR014" H 5150 4300 50  0001 C CNN
-F 1 "GND" H 5155 4377 50  0000 C CNN
-F 2 "" H 5150 4550 50  0001 C CNN
-F 3 "" H 5150 4550 50  0001 C CNN
-	1    5150 4550
-	1    0    0    -1  
-$EndComp
-Text GLabel 3450 3450 0    50   Input ~ 0
-xbee_reset
 Text GLabel 3650 1300 0    50   Input ~ 0
 FT_TX
 Text GLabel 4150 1300 2    50   Input ~ 0
 FT_RX
 Wire Wire Line
-	4050 2650 3950 2650
+	3950 1550 3950 2150
 Wire Wire Line
-	3850 2750 4050 2750
-Wire Wire Line
-	3950 1550 3950 2650
-Wire Wire Line
-	3850 2750 3850 1550
+	3850 2150 3850 1550
 $Comp
 L Device:Jumper_NC_Dual JP2
 U 1 1 5BE86492
 P 4050 1550
 F 0 "JP2" V 4004 1651 50  0000 L CNN
 F 1 "XBEE_TX_JUMPER" V 4095 1651 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 4050 1550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4050 1550 50  0001 C CNN
 F 3 "~" H 4050 1550 50  0001 C CNN
 	1    4050 1550
 	0    1    1    0   
@@ -121,7 +78,7 @@ U 1 1 5BE8656D
 P 3750 1550
 F 0 "JP1" V 3796 1652 50  0000 L CNN
 F 1 "XBEE_RX_JUMPER" V 3705 1652 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 3750 1550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3750 1550 50  0001 C CNN
 F 3 "~" H 3750 1550 50  0001 C CNN
 	1    3750 1550
 	0    -1   -1   0   
@@ -183,39 +140,6 @@ F 3 "" H 6050 1650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R17
-U 1 1 5BF16573
-P 6400 3150
-F 0 "R17" V 6500 3150 50  0000 C CNN
-F 1 "1k" V 6550 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6440 3140 50  0001 C CNN
-F 3 "~" H 6400 3150 50  0001 C CNN
-	1    6400 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED D8
-U 1 1 5BF16719
-P 6700 3150
-F 0 "D8" H 6650 3400 50  0000 C CNN
-F 1 "XBEE_HEARTBEAT" H 6550 3300 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6700 3150 50  0001 C CNN
-F 3 "~" H 6700 3150 50  0001 C CNN
-	1    6700 3150
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 5BF167EA
-P 6850 3150
-F 0 "#PWR0109" H 6850 3150 30  0001 C CNN
-F 1 "GND" H 6850 3080 30  0001 C CNN
-F 2 "" H 6850 3150 50  0001 C CNN
-F 3 "" H 6850 3150 50  0001 C CNN
-	1    6850 3150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector:Conn_01x10_Male J5
 U 1 1 5BF17877
 P 1400 3600
@@ -246,7 +170,7 @@ XBEE_DIN
 Text Label 1600 3500 0    50   ~ 0
 DO8
 Text Label 1600 3600 0    50   ~ 0
-XBEE_RESET
+XBEE_RES
 Text Label 1600 3700 0    50   ~ 0
 PWM0_RSSI
 Text Label 1600 3800 0    50   ~ 0
@@ -275,60 +199,163 @@ Text Label 2500 4000 2    50   ~ 0
 CTS_DIO7
 Text Label 2500 4100 2    50   ~ 0
 DIO4
-Text Label 3650 2850 0    50   ~ 0
-CTS_DIO7
-Text Label 3650 2950 0    50   ~ 0
-RTS_DIO6
-Text Label 3800 3150 0    50   ~ 0
-DIO3
-Text Label 3800 3250 0    50   ~ 0
-DIO2
-Text Label 3800 3350 0    50   ~ 0
-DIO1
-Text Label 3800 3450 0    50   ~ 0
-DIO0
-Text Label 3550 3650 0    50   ~ 0
-XBEE_RESET
-Text Label 3600 3750 0    50   ~ 0
+Text Label 3950 2150 1    50   ~ 0
+XBEE_DOUT
+Text Label 3850 2150 1    50   ~ 0
+XBEE_DIN
+NoConn ~ 1600 3900
+$Comp
+L dk_RF-Transceiver-Modules:XBP9B-DMWT-002 MOD1
+U 1 1 5C00AC74
+P 5150 4150
+F 0 "MOD1" H 4500 3800 60  0000 C CNN
+F 1 "XBP9B-DMWT-002" H 4500 3950 60  0000 C CNN
+F 2 "digikey-footprints:XBEE_PRO-20_THT" H 5350 4350 60  0001 L CNN
+F 3 "https://www.digi.com/resources/documentation/digidocs/pdfs/90002173.pdf" H 5350 4450 60  0001 L CNN
+F 4 "602-1301-ND" H 5350 4550 60  0001 L CNN "Digi-Key_PN"
+F 5 "XBP9B-DMWT-002" H 5350 4650 60  0001 L CNN "MPN"
+F 6 "RF/IF and RFID" H 5350 4750 60  0001 L CNN "Category"
+F 7 "RF Transceiver Modules" H 5350 4850 60  0001 L CNN "Family"
+F 8 "https://www.digi.com/resources/documentation/digidocs/pdfs/90002173.pdf" H 5350 4950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/digi-international/XBP9B-DMWT-002/602-1301-ND/3594159" H 5350 5050 60  0001 L CNN "DK_Detail_Page"
+F 10 "RF TXRX MODULE ISM<1GHZ WIRE ANT" H 5350 5150 60  0001 L CNN "Description"
+F 11 "Digi International" H 5350 5250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5350 5350 60  0001 L CNN "Status"
+	1    5150 4150
+	1    0    0    -1  
+$EndComp
+Text Label 6250 4150 2    50   ~ 0
+ON_SLEEP
+Text Label 6150 3950 2    50   ~ 0
+DIO4
+Text Label 6150 3450 2    50   ~ 0
+PWM1
+Text Label 4100 3550 0    50   ~ 0
+PWM0_RSSI
+Text GLabel 3900 3550 0    50   Input ~ 0
+xbee_RSSI_out
+Wire Wire Line
+	6150 3450 5850 3450
+Wire Wire Line
+	6150 3950 5850 3950
+Wire Wire Line
+	6250 4150 5850 4150
+Wire Wire Line
+	4550 3550 3900 3550
+Text Label 6350 4050 2    50   ~ 0
+ASSOC_DIO5
+$Comp
+L Device:R_US R17
+U 1 1 5C00CFD1
+P 6600 4050
+F 0 "R17" V 6700 4050 50  0000 C CNN
+F 1 "1k" V 6750 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6640 4040 50  0001 C CNN
+F 3 "~" H 6600 4050 50  0001 C CNN
+	1    6600 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5C00CFD8
+P 6900 4050
+F 0 "D8" H 6850 4300 50  0000 C CNN
+F 1 "XBEE_HEARTBEAT" H 6750 4200 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6900 4050 50  0001 C CNN
+F 3 "~" H 6900 4050 50  0001 C CNN
+	1    6900 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5C00CFDF
+P 7050 4050
+F 0 "#PWR0109" H 7050 4050 30  0001 C CNN
+F 1 "GND" H 7050 3980 30  0001 C CNN
+F 2 "" H 7050 4050 50  0001 C CNN
+F 3 "" H 7050 4050 50  0001 C CNN
+	1    7050 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 4050 5850 4050
+$Comp
+L ATU-2019-eagle-import:GND #GND0110
+U 1 1 5C00E8FE
+P 5150 4450
+F 0 "#GND0110" H 5150 4450 50  0001 C CNN
+F 1 "GND" H 5150 4329 59  0000 C CNN
+F 2 "" H 5150 4450 50  0001 C CNN
+F 3 "" H 5150 4450 50  0001 C CNN
+	1    5150 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 3850 0    50   Input ~ 0
+xbee_reset
+Text Label 4100 3850 0    50   ~ 0
+XBEE_RES
+Wire Wire Line
+	4550 3850 3900 3850
+Text Label 4100 3750 0    50   ~ 0
 DTR_SLEEP
 Wire Wire Line
-	4050 2850 3650 2850
+	4550 3750 4100 3750
+Text Label 4100 4050 0    50   ~ 0
+CTS_DIO7
 Wire Wire Line
-	3650 2950 4050 2950
+	4550 4050 4100 4050
+Text Label 4100 3950 0    50   ~ 0
+RTS_DIO6
 Wire Wire Line
-	4050 3150 3800 3150
+	4550 3950 4100 3950
+Text GLabel 5250 2750 1    50   Input ~ 0
+XBEE_VCC
 Wire Wire Line
-	4050 3250 3800 3250
-Wire Wire Line
-	4050 3350 3800 3350
-Wire Wire Line
-	4050 3450 3800 3450
-Wire Wire Line
-	3450 3650 3450 3450
-Wire Wire Line
-	3450 3650 4050 3650
-Wire Wire Line
-	3600 3750 4050 3750
-Text Label 6750 2750 2    50   ~ 0
-PWM0_RSSI
-Text Label 6550 2850 2    50   ~ 0
-PWM1
-Wire Wire Line
-	6250 2850 6550 2850
-Wire Wire Line
-	6250 2750 7100 2750
-Text Label 6500 2950 2    50   ~ 0
-DIO4
-Text Label 6700 3050 2    50   ~ 0
-ON_SLEEP
-Text Label 5250 2250 3    50   ~ 0
+	5250 2750 5250 2900
+Text Label 5050 2700 3    50   ~ 0
 VREF
 Wire Wire Line
-	5150 2150 5150 2450
+	5050 2700 5050 2950
+Text Label 6300 3350 2    50   ~ 0
+XBEE_DOUT
 Wire Wire Line
-	5250 2450 5250 2250
+	6300 3350 5850 3350
+Text Label 4200 3350 0    50   ~ 0
+XBEE_DIN
 Wire Wire Line
-	6500 2950 6250 2950
+	4200 3350 4550 3350
+Text Label 6150 3550 2    50   ~ 0
+DIO0
+Text Label 6150 3650 2    50   ~ 0
+DIO1
+Text Label 6150 3750 2    50   ~ 0
+DIO2
+Text Label 6150 3850 2    50   ~ 0
+DIO3
 Wire Wire Line
-	6700 3050 6250 3050
+	5850 3550 6150 3550
+Wire Wire Line
+	6150 3650 5850 3650
+Wire Wire Line
+	5850 3750 6150 3750
+Wire Wire Line
+	5850 3850 6150 3850
+Text Label 4400 3450 0    50   ~ 0
+DO8
+Wire Wire Line
+	4550 3450 4400 3450
+$Comp
+L power:PWR_FLAG #FLG0111
+U 1 1 5C022AC0
+P 5250 2900
+F 0 "#FLG0111" H 5250 3170 30  0001 C CNN
+F 1 "PWR_FLAG" V 5250 3127 30  0000 L CNN
+F 2 "" H 5250 2900 50  0001 C CNN
+F 3 "" H 5250 2900 50  0001 C CNN
+	1    5250 2900
+	0    1    1    0   
+$EndComp
+Connection ~ 5250 2900
+Wire Wire Line
+	5250 2900 5250 2950
 $EndSCHEMATC

@@ -189,32 +189,6 @@ Text GLabel 9100 1350 0    50   Input ~ 0
 FT_TX
 Text GLabel 9600 1350 2    50   Input ~ 0
 FT_RX
-$Comp
-L Device:Jumper_NC_Dual JP?
-U 1 1 5BE9B631
-P 9500 1600
-AR Path="/5BE1ED61/5BE9B631" Ref="JP?"  Part="1" 
-AR Path="/5BE1F2B9/5BE9B631" Ref="JP4"  Part="1" 
-F 0 "JP4" V 9454 1701 50  0000 L CNN
-F 1 "GPS_TX_JUMPER" V 9545 1701 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 9500 1600 50  0001 C CNN
-F 3 "~" H 9500 1600 50  0001 C CNN
-	1    9500 1600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Dual JP?
-U 1 1 5BE9B638
-P 9200 1600
-AR Path="/5BE1ED61/5BE9B638" Ref="JP?"  Part="1" 
-AR Path="/5BE1F2B9/5BE9B638" Ref="JP3"  Part="1" 
-F 0 "JP3" V 9246 1702 50  0000 L CNN
-F 1 "GPS_RX_JUMPER" V 9155 1702 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 9200 1600 50  0001 C CNN
-F 3 "~" H 9200 1600 50  0001 C CNN
-	1    9200 1600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9500 1850 9600 1850
 Wire Wire Line
@@ -253,4 +227,45 @@ Wire Wire Line
 Connection ~ 6800 2250
 Wire Wire Line
 	6800 2250 6800 2350
+NoConn ~ 8100 3050
+NoConn ~ 8100 3150
+NoConn ~ 8100 3350
+NoConn ~ 8100 3550
+NoConn ~ 8100 3750
+NoConn ~ 8100 2550
+NoConn ~ 6800 3000
+$Comp
+L Connector:Conn_01x03_Male J16
+U 1 1 5BFB4DE9
+P 9700 1600
+F 0 "J16" H 9673 1530 50  0000 R CNN
+F 1 "GPS_TX_JUMPER" H 9673 1621 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9700 1600 50  0001 C CNN
+F 3 "~" H 9700 1600 50  0001 C CNN
+	1    9700 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9500 1350 9500 1500
+Wire Wire Line
+	9400 1600 9500 1600
+Wire Wire Line
+	9500 1700 9500 1850
+$Comp
+L Connector:Conn_01x03_Male J15
+U 1 1 5BFB5DDE
+P 9000 1600
+F 0 "J15" H 8750 1650 50  0000 C CNN
+F 1 "GPS_RX_JUMPER" H 8650 1550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9000 1600 50  0001 C CNN
+F 3 "~" H 9000 1600 50  0001 C CNN
+	1    9000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1600 9300 1600
+Wire Wire Line
+	9200 1500 9200 1350
+Wire Wire Line
+	9200 1700 9200 1850
 $EndSCHEMATC

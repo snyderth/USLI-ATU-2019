@@ -33,7 +33,7 @@ uC_11_MOSI0
 Text GLabel 1950 2900 0    50   Input ~ 0
 uC_12_MISO0
 Text GLabel 1950 3000 0    50   Input ~ 0
-uC_3V3
+uC_3V3_OUT
 Text GLabel 1950 3100 0    50   Input ~ 0
 uC_24_DIO
 Text GLabel 1950 3300 0    50   Input ~ 0
@@ -305,7 +305,7 @@ L power:GND #PWR03
 U 1 1 5BE1EC69
 P 7700 4250
 F 0 "#PWR03" H 7700 4000 50  0001 C CNN
-F 1 "GND" H 7705 4077 50  0000 C CNN
+F 1 "GND" H 7700 4150 50  0000 C CNN
 F 2 "" H 7700 4250 50  0001 C CNN
 F 3 "" H 7700 4250 50  0001 C CNN
 	1    7700 4250
@@ -346,7 +346,7 @@ Wire Wire Line
 	7850 4550 7700 4550
 Connection ~ 7700 4550
 Wire Wire Line
-	7700 4550 7500 4550
+	7700 4550 7600 4550
 $Comp
 L Device:R_US R12
 U 1 1 5BF159B7
@@ -614,15 +614,15 @@ Text GLabel 5500 1650 0    50   Input ~ 0
 uC_3_pwm-SCL2
 Text GLabel 5500 1750 0    50   Input ~ 0
 uC_4_pwm-SDA2
-Text GLabel 5500 1850 0    50   Input ~ 0
+Text GLabel 4650 1850 0    50   Input ~ 0
 uC_5_pwm
-Text GLabel 5500 1950 0    50   Input ~ 0
+Text GLabel 4650 1950 0    50   Input ~ 0
 uC_6_pwm
 Text GLabel 5500 2450 0    50   Input ~ 0
 uC_11_MOSI0
 Text GLabel 5500 2550 0    50   Input ~ 0
 uC_12_MISO0
-Text GLabel 5500 2650 0    50   Input ~ 0
+Text GLabel 4800 2650 0    50   Input ~ 0
 uC_3V3_OUT
 Text GLabel 5500 2750 0    50   Input ~ 0
 uC_24_DIO
@@ -634,16 +634,12 @@ Text GLabel 5500 3250 0    50   Input ~ 0
 uC_29_CAN0TX
 Text GLabel 5500 3350 0    50   Input ~ 0
 uC_30_CAN0RX
-Text GLabel 5500 3650 0    50   Input ~ 0
-uC_5Vin
 Text GLabel 8100 4650 2    50   Input ~ 0
 AGND
 Wire Wire Line
 	7500 4650 8000 4650
 Wire Wire Line
 	8000 4650 8000 4800
-Wire Wire Line
-	8000 4800 8350 4800
 Connection ~ 8000 4650
 Wire Wire Line
 	8000 4650 8100 4650
@@ -692,4 +688,65 @@ NoConn ~ 7500 1550
 NoConn ~ 7500 1450
 NoConn ~ 7500 1350
 NoConn ~ 7500 1250
+NoConn ~ 5500 3650
+NoConn ~ 5500 3750
+NoConn ~ 7500 2350
+Wire Wire Line
+	5500 1950 5050 1950
+Text GLabel 4900 2050 0    50   Input ~ 0
+xbee_RSSI_out
+Wire Wire Line
+	5050 1950 5050 2050
+Wire Wire Line
+	5050 2050 4900 2050
+Connection ~ 5050 1950
+Wire Wire Line
+	5050 1950 4650 1950
+Wire Wire Line
+	5500 1850 4750 1850
+Text GLabel 4650 1750 0    50   Input ~ 0
+xbee_reset
+Wire Wire Line
+	4650 1750 4750 1750
+Wire Wire Line
+	4750 1750 4750 1850
+Connection ~ 4750 1850
+Wire Wire Line
+	4750 1850 4650 1850
+$Comp
+L power:PWR_FLAG #FLG0109
+U 1 1 5BFDEE0B
+P 7650 3950
+F 0 "#FLG0109" H 7650 4220 30  0001 C CNN
+F 1 "PWR_FLAG" V 7650 4177 30  0000 L CNN
+F 2 "" H 7650 3950 50  0001 C CNN
+F 3 "" H 7650 3950 50  0001 C CNN
+	1    7650 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 3950 7600 3950
+Wire Wire Line
+	7600 3950 7600 4550
+Connection ~ 7600 4550
+Wire Wire Line
+	7600 4550 7500 4550
+Wire Wire Line
+	4800 2650 4850 2650
+$Comp
+L power:PWR_FLAG #FLG0110
+U 1 1 5BFE08E4
+P 4850 2650
+F 0 "#FLG0110" H 4850 2920 30  0001 C CNN
+F 1 "PWR_FLAG" H 4850 2908 30  0000 C CNN
+F 2 "" H 4850 2650 50  0001 C CNN
+F 3 "" H 4850 2650 50  0001 C CNN
+	1    4850 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 2650
+Wire Wire Line
+	4850 2650 5500 2650
+Wire Wire Line
+	8000 4800 8350 4800
 $EndSCHEMATC
