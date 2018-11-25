@@ -994,41 +994,10 @@ F 3 "~" H 3400 1100 50  0001 C CNN
 	1    3400 1100
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5BF46AA0
-P 2900 1150
-AR Path="/5BE46730/5BF46AA0" Ref="C?"  Part="1" 
-AR Path="/5BE56F77/5BF46AA0" Ref="C14"  Part="1" 
-F 0 "C14" H 3015 1196 50  0000 L CNN
-F 1 "4700pF" H 3000 1300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2938 1000 50  0001 C CNN
-F 3 "~" H 2900 1150 50  0001 C CNN
-	1    2900 1150
-	1    0    0    -1  
-$EndComp
 Text GLabel 2600 1300 0    50   Input ~ 0
 433_VCC
 Wire Wire Line
 	3650 1300 3400 1300
-Wire Wire Line
-	3300 1300 2900 1300
-Wire Wire Line
-	2900 1300 2600 1300
-Connection ~ 2900 1300
-$Comp
-L power:GND #PWR?
-U 1 1 5BF46AAC
-P 2900 1000
-AR Path="/5BE46730/5BF46AAC" Ref="#PWR?"  Part="1" 
-AR Path="/5BE56F77/5BF46AAC" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 2900 750 50  0001 C CNN
-F 1 "GND" H 2900 900 50  0000 C CNN
-F 2 "" H 2900 1000 50  0001 C CNN
-F 3 "" H 2900 1000 50  0001 C CNN
-	1    2900 1000
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2550 2000 2800 2000
 NoConn ~ 4850 5300
@@ -1130,4 +1099,6 @@ $EndComp
 Connection ~ 9350 4450
 Wire Wire Line
 	9350 4450 9600 4450
+Wire Wire Line
+	2600 1300 3300 1300
 $EndSCHEMATC
