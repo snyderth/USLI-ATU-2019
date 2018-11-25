@@ -22,7 +22,7 @@ AR Path="/5BE4679C" Ref="U?"  Part="1"
 AR Path="/5BE46730/5BE4679C" Ref="U10"  Part="1" 
 F 0 "U10" H 5700 3342 50  0000 C CNN
 F 1 "Sensor_3V3_Supply" H 5700 3251 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-4" H 5700 3350 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 5700 3350 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 5700 3100 50  0001 C CNN
 	1    5700 3100
 	1    0    0    -1  

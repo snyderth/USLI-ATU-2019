@@ -22,7 +22,7 @@ AR Path="/5BE1F523/5BE59F85" Ref="U?"  Part="1"
 AR Path="/5BE56F77/5BE59F85" Ref="U12"  Part="1" 
 F 0 "U12" H 2250 2242 50  0000 C CNN
 F 1 "433_MHz_3V3" H 2250 2151 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-4" H 2250 2250 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2250 2250 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 2250 2000 50  0001 C CNN
 	1    2250 2000
 	1    0    0    -1  
@@ -968,17 +968,6 @@ Wire Wire Line
 	3850 6000 4850 6000
 Wire Wire Line
 	4850 5800 3850 5800
-$Comp
-L _antenna:ANTENNA A2
-U 1 1 5BF2AEA9
-P 10050 5800
-F 0 "A2" V 10050 6028 60  0000 L CNN
-F 1 "ANTENNA" H 10050 6100 60  0001 C CNN
-F 2 "RF_Antenna:Patch_Antenna_18mmx18mm" H 10050 5800 60  0001 C CNN
-F 3 "" H 10050 5800 60  0000 C CNN
-	1    10050 5800
-	0    1    1    0   
-$EndComp
 Text GLabel 3650 1300 2    50   Input ~ 0
 433_VCC_IN
 $Comp
@@ -1101,4 +1090,15 @@ Wire Wire Line
 	9350 4450 9600 4450
 Wire Wire Line
 	2600 1300 3300 1300
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5BFAE778
+P 9750 5800
+F 0 "TP1" V 9704 5988 50  0000 L CNN
+F 1 "TestPoint" V 9795 5988 50  0000 L CNN
+F 2 "TestPoint:test_point_antenna" H 9950 5800 50  0001 C CNN
+F 3 "~" H 9950 5800 50  0001 C CNN
+	1    9750 5800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

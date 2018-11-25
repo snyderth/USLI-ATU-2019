@@ -20,7 +20,7 @@ U 1 1 5BE1F199
 P 2350 1950
 F 0 "U3" H 2350 2192 50  0000 C CNN
 F 1 "XBEE_3.3v_supply" H 2350 2101 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-4" H 2350 2200 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2350 2200 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 2350 1950 50  0001 C CNN
 	1    2350 1950
 	1    0    0    -1  

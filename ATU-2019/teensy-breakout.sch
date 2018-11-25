@@ -260,7 +260,7 @@ U 1 1 5BE1EC4E
 P 1950 5100
 F 0 "U1" H 1950 5342 50  0000 C CNN
 F 1 "Teensy_5V" H 1950 5251 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-4" H 1950 5350 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 1950 5350 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 1950 5100 50  0001 C CNN
 	1    1950 5100
 	1    0    0    -1  
