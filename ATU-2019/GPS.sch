@@ -211,7 +211,7 @@ U 1 1 5BEA1A20
 P 6600 2100
 F 0 "J9" H 6400 2000 50  0000 C CNN
 F 1 "GPS_SW" H 6400 2100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6600 2100 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6600 2100 50  0001 C CNN
 F 3 "~" H 6600 2100 50  0001 C CNN
 	1    6600 2100
 	1    0    0    -1  
@@ -240,7 +240,7 @@ U 1 1 5BFB4DE9
 P 9700 1600
 F 0 "J16" H 9673 1530 50  0000 R CNN
 F 1 "GPS_TX_JUMPER" H 9673 1621 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9700 1600 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x03_P3.50mm_Horizontal" H 9700 1600 50  0001 C CNN
 F 3 "~" H 9700 1600 50  0001 C CNN
 	1    9700 1600
 	-1   0    0    1   
@@ -257,7 +257,7 @@ U 1 1 5BFB5DDE
 P 9000 1600
 F 0 "J15" H 8750 1650 50  0000 C CNN
 F 1 "GPS_RX_JUMPER" H 8650 1550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9000 1600 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x03_P3.50mm_Horizontal" H 9000 1600 50  0001 C CNN
 F 3 "~" H 9000 1600 50  0001 C CNN
 	1    9000 1600
 	1    0    0    -1  

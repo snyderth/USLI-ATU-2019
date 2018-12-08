@@ -285,7 +285,7 @@ AR Path="/5BE46730/5BEAB221" Ref="J?"  Part="1"
 AR Path="/5BE1F523/5BEAB221" Ref="J8"  Part="1" 
 F 0 "J8" V 5260 2390 50  0000 L CNN
 F 1 "FT231_SW" V 5150 2400 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5200 2350 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 5200 2350 50  0001 C CNN
 F 3 "~" H 5200 2350 50  0001 C CNN
 	1    5200 2350
 	0    1    1    0   

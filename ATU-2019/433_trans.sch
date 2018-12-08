@@ -978,7 +978,7 @@ AR Path="/5BE46730/5BF46A99" Ref="J?"  Part="1"
 AR Path="/5BE56F77/5BF46A99" Ref="J14"  Part="1" 
 F 0 "J14" V 3460 1140 50  0000 L CNN
 F 1 "CC1200_SW" V 3350 1150 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3400 1100 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 3400 1100 50  0001 C CNN
 F 3 "~" H 3400 1100 50  0001 C CNN
 	1    3400 1100
 	0    1    1    0   

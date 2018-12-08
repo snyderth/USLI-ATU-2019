@@ -310,7 +310,7 @@ U 1 1 5BEA3616
 P 9850 1000
 F 0 "J12" V 9910 1040 50  0000 L CNN
 F 1 "IMU_SW" V 9800 1050 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9850 1000 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 9850 1000 50  0001 C CNN
 F 3 "~" H 9850 1000 50  0001 C CNN
 	1    9850 1000
 	0    1    1    0   
@@ -354,7 +354,7 @@ U 1 1 5BEA55BE
 P 2450 2350
 F 0 "J10" V 2510 2390 50  0000 L CNN
 F 1 "ACCEL_SW" V 2400 2400 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 2350 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 2450 2350 50  0001 C CNN
 F 3 "~" H 2450 2350 50  0001 C CNN
 	1    2450 2350
 	0    1    1    0   
@@ -398,7 +398,7 @@ U 1 1 5BEA67EC
 P 2950 4500
 F 0 "J11" V 3010 4540 50  0000 L CNN
 F 1 "PRESSURE_SW" V 2900 4550 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2950 4500 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 2950 4500 50  0001 C CNN
 F 3 "~" H 2950 4500 50  0001 C CNN
 	1    2950 4500
 	0    1    1    0   
@@ -555,7 +555,7 @@ U 1 1 5BF6013E
 P 5550 7100
 F 0 "J19" V 5610 7140 50  0000 L CNN
 F 1 "MPU_SW" V 5500 7150 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5550 7100 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 5550 7100 50  0001 C CNN
 F 3 "~" H 5550 7100 50  0001 C CNN
 	1    5550 7100
 	0    1    1    0   
@@ -623,7 +623,7 @@ U 1 1 5BF6883A
 P 4950 5200
 F 0 "J18" H 5000 5400 50  0000 C CNN
 F 1 "ADDR_SEL_MPU" V 4850 5200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4950 5200 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x03_P3.50mm_Horizontal" H 4950 5200 50  0001 C CNN
 F 3 "~" H 4950 5200 50  0001 C CNN
 	1    4950 5200
 	1    0    0    -1  
@@ -703,7 +703,7 @@ U 1 1 5BF78B52
 P 950 5400
 F 0 "J17" H 1000 5600 50  0000 C CNN
 F 1 "ADDR_SEL_PRESSURE" V 850 5400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 950 5400 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x03_P3.50mm_Horizontal" H 950 5400 50  0001 C CNN
 F 3 "~" H 950 5400 50  0001 C CNN
 	1    950  5400
 	1    0    0    -1  

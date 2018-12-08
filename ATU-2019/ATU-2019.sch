@@ -116,4 +116,98 @@ Wire Wire Line
 Wire Wire Line
 	4500 3200 4400 3200
 Connection ~ 4500 3200
+$Comp
+L power:VCC #PWR0115
+U 1 1 5BFB00B1
+P 4250 4550
+F 0 "#PWR0115" H 4250 4650 30  0001 C CNN
+F 1 "VCC" V 4254 4648 30  0000 L CNN
+F 2 "" H 4250 4550 50  0001 C CNN
+F 3 "" H 4250 4550 50  0001 C CNN
+	1    4250 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 4550 4400 4550
+$Comp
+L power:+8V #PWR0119
+U 1 1 5BFB019C
+P 4400 4550
+F 0 "#PWR0119" H 4400 4520 20  0001 C CNN
+F 1 "+8V" H 4400 4688 30  0000 C CNN
+F 2 "" H 4400 4550 50  0001 C CNN
+F 3 "" H 4400 4550 50  0001 C CNN
+	1    4400 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4400 4550
+Wire Wire Line
+	4400 4550 4500 4550
+$Comp
+L ATU-2019-eagle-import:GND #GND0111
+U 1 1 5BFB0202
+P 4500 4850
+F 0 "#GND0111" H 4500 4850 50  0001 C CNN
+F 1 "GND" H 4500 4729 59  0000 C CNN
+F 2 "" H 4500 4850 50  0001 C CNN
+F 3 "" H 4500 4850 50  0001 C CNN
+	1    4500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J21
+U 1 1 5BFB0B2D
+P 4700 4650
+F 0 "J21" H 4780 4692 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 4780 4601 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x03_P3.50mm_Vertical" H 4700 4650 50  0001 C CNN
+F 3 "~" H 4700 4650 50  0001 C CNN
+	1    4700 4650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4500 4650
+$Comp
+L Connector:Conn_01x01_Female J22
+U 1 1 5BFB240C
+P 7050 4450
+F 0 "J22" H 7078 4476 50  0000 L CNN
+F 1 "standoff_1" H 7078 4385 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 7050 4450 50  0001 C CNN
+F 3 "~" H 7050 4450 50  0001 C CNN
+	1    7050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J23
+U 1 1 5BFB243C
+P 7050 4850
+F 0 "J23" H 7078 4876 50  0000 L CNN
+F 1 "standoff_2" H 7078 4785 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 7050 4850 50  0001 C CNN
+F 3 "~" H 7050 4850 50  0001 C CNN
+	1    7050 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J24
+U 1 1 5BFB245E
+P 8100 4750
+F 0 "J24" H 8128 4776 50  0000 L CNN
+F 1 "standoff_3" H 8128 4685 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 8100 4750 50  0001 C CNN
+F 3 "~" H 8100 4750 50  0001 C CNN
+	1    8100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J25
+U 1 1 5BFB249E
+P 8150 4300
+F 0 "J25" H 8178 4326 50  0000 L CNN
+F 1 "standoff_4" H 8178 4235 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 8150 4300 50  0001 C CNN
+F 3 "~" H 8150 4300 50  0001 C CNN
+	1    8150 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
