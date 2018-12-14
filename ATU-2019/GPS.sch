@@ -205,17 +205,6 @@ Wire Wire Line
 	9300 2850 8400 2850
 Wire Wire Line
 	9300 1600 9300 2850
-$Comp
-L Connector:Conn_01x02_Male J9
-U 1 1 5BEA1A20
-P 6600 2100
-F 0 "J9" H 6400 2000 50  0000 C CNN
-F 1 "GPS_SW" H 6400 2100 50  0000 C CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6600 2100 50  0001 C CNN
-F 3 "~" H 6600 2100 50  0001 C CNN
-	1    6600 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6800 2100 6800 2000
 Wire Wire Line
@@ -268,4 +257,15 @@ Wire Wire Line
 	9200 1500 9200 1350
 Wire Wire Line
 	9200 1700 9200 1850
+$Comp
+L Connector:Screw_Terminal_01x02 J9
+U 1 1 5C139B2B
+P 6600 2200
+F 0 "J9" H 6520 1875 50  0000 C CNN
+F 1 "GPS_SW" H 6520 1966 50  0000 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" H 6600 2200 50  0001 C CNN
+F 3 "~" H 6600 2200 50  0001 C CNN
+	1    6600 2200
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

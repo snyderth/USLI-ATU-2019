@@ -278,19 +278,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 3300 4500 3300
 $Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5BEAB221
-P 5200 2350
-AR Path="/5BE46730/5BEAB221" Ref="J?"  Part="1" 
-AR Path="/5BE1F523/5BEAB221" Ref="J8"  Part="1" 
-F 0 "J8" V 5260 2390 50  0000 L CNN
-F 1 "FT231_SW" V 5150 2400 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 5200 2350 50  0001 C CNN
-F 3 "~" H 5200 2350 50  0001 C CNN
-	1    5200 2350
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C40
 U 1 1 5BEAB228
 P 4700 2400
@@ -344,4 +331,15 @@ F 3 "" H 3900 5950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 3900 5950
+$Comp
+L Connector:Screw_Terminal_01x02 J8
+U 1 1 5C1394C2
+P 5100 2350
+F 0 "J8" V 5066 2162 50  0000 R CNN
+F 1 "FT231_SW" V 4975 2162 50  0000 R CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" H 5100 2350 50  0001 C CNN
+F 3 "~" H 5100 2350 50  0001 C CNN
+	1    5100 2350
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

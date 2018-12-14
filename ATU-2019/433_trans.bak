@@ -970,19 +970,6 @@ Wire Wire Line
 	4850 5800 3850 5800
 Text GLabel 3650 1300 2    50   Input ~ 0
 433_VCC_IN
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5BF46A99
-P 3400 1100
-AR Path="/5BE46730/5BF46A99" Ref="J?"  Part="1" 
-AR Path="/5BE56F77/5BF46A99" Ref="J14"  Part="1" 
-F 0 "J14" V 3460 1140 50  0000 L CNN
-F 1 "CC1200_SW" V 3350 1150 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3400 1100 50  0001 C CNN
-F 3 "~" H 3400 1100 50  0001 C CNN
-	1    3400 1100
-	0    1    1    0   
-$EndComp
 Text GLabel 2600 1300 0    50   Input ~ 0
 433_VCC
 Wire Wire Line
@@ -1100,5 +1087,16 @@ F 2 "TestPoint:test_point_antenna" H 9950 5800 50  0001 C CNN
 F 3 "~" H 9950 5800 50  0001 C CNN
 	1    9750 5800
 	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J14
+U 1 1 5C1417DB
+P 3300 1100
+F 0 "J14" V 3266 912 50  0000 R CNN
+F 1 "CC1200_SW" V 3175 912 50  0000 R CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" H 3300 1100 50  0001 C CNN
+F 3 "~" H 3300 1100 50  0001 C CNN
+	1    3300 1100
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

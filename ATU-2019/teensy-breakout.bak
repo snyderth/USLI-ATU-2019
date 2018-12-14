@@ -303,12 +303,12 @@ $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5BE1EC69
-P 7700 4250
-F 0 "#PWR03" H 7700 4000 50  0001 C CNN
-F 1 "GND" H 7700 4150 50  0000 C CNN
-F 2 "" H 7700 4250 50  0001 C CNN
-F 3 "" H 7700 4250 50  0001 C CNN
-	1    7700 4250
+P 7700 4150
+F 0 "#PWR03" H 7700 3900 50  0001 C CNN
+F 1 "GND" H 7700 4050 50  0000 C CNN
+F 2 "" H 7700 4150 50  0001 C CNN
+F 3 "" H 7700 4150 50  0001 C CNN
+	1    7700 4150
 	-1   0    0    1   
 $EndComp
 Text GLabel 5500 3550 0    50   Input ~ 0
@@ -329,24 +329,8 @@ Text GLabel 2900 3600 2    50   Input ~ 0
 uC_433_reset
 Text GLabel 1950 2300 0    50   Input ~ 0
 uC_6_pwm
-$Comp
-L Connector:Conn_01x02_Male J4
-U 1 1 5BEA22EC
-P 7950 4350
-F 0 "J4" V 8010 4390 50  0000 L CNN
-F 1 "TEENSY_SW" V 7900 4400 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7950 4350 50  0001 C CNN
-F 3 "~" H 7950 4350 50  0001 C CNN
-	1    7950 4350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8100 4550 7950 4550
-Wire Wire Line
-	7850 4550 7700 4550
-Connection ~ 7700 4550
-Wire Wire Line
-	7700 4550 7600 4550
 $Comp
 L Device:R_US R12
 U 1 1 5BF159B7
@@ -728,7 +712,6 @@ Wire Wire Line
 	7650 3950 7600 3950
 Wire Wire Line
 	7600 3950 7600 4550
-Connection ~ 7600 4550
 Wire Wire Line
 	7600 4550 7500 4550
 Wire Wire Line
@@ -749,4 +732,23 @@ Wire Wire Line
 	4850 2650 5500 2650
 Wire Wire Line
 	8000 4800 8350 4800
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5C1363D4
+P 7850 4350
+F 0 "J4" V 7816 4162 50  0000 R CNN
+F 1 "TEENSY_SW" V 7725 4162 50  0000 R CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" H 7850 4350 50  0001 C CNN
+F 3 "~" H 7850 4350 50  0001 C CNN
+	1    7850 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7850 4550 7700 4550
+Wire Wire Line
+	7700 4550 7600 4550
+Connection ~ 7700 4550
+Connection ~ 7600 4550
+Wire Wire Line
+	7700 4250 7700 4150
 $EndSCHEMATC

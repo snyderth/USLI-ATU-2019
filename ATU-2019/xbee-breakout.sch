@@ -67,7 +67,7 @@ U 1 1 5BE86492
 P 4050 1550
 F 0 "JP2" V 4004 1651 50  0000 L CNN
 F 1 "XBEE_TX_JUMPER" V 4095 1651 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4050 1550 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x03_P3.50mm_Vertical" H 4050 1550 50  0001 C CNN
 F 3 "~" H 4050 1550 50  0001 C CNN
 	1    4050 1550
 	0    1    1    0   
@@ -78,7 +78,7 @@ U 1 1 5BE8656D
 P 3750 1550
 F 0 "JP1" V 3796 1652 50  0000 L CNN
 F 1 "XBEE_RX_JUMPER" V 3705 1652 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3750 1550 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x03_P3.50mm_Vertical" H 3750 1550 50  0001 C CNN
 F 3 "~" H 3750 1550 50  0001 C CNN
 	1    3750 1550
 	0    -1   -1   0   
@@ -91,19 +91,6 @@ Wire Wire Line
 	3750 1300 3650 1300
 Wire Wire Line
 	3750 1800 3650 1800
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5BEAC053
-P 6550 1750
-AR Path="/5BE46730/5BEAC053" Ref="J?"  Part="1" 
-AR Path="/5BE1ED61/5BEAC053" Ref="J7"  Part="1" 
-F 0 "J7" V 6610 1790 50  0000 L CNN
-F 1 "XBEE_SW" V 6500 1800 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6550 1750 50  0001 C CNN
-F 3 "~" H 6550 1750 50  0001 C CNN
-	1    6550 1750
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 5BEAC05A
@@ -358,4 +345,15 @@ $EndComp
 Connection ~ 5250 2900
 Wire Wire Line
 	5250 2900 5250 2950
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 5C139350
+P 6450 1750
+F 0 "J7" V 6416 1562 50  0000 R CNN
+F 1 "XBEE_SW" V 6325 1562 50  0000 R CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" H 6450 1750 50  0001 C CNN
+F 3 "~" H 6450 1750 50  0001 C CNN
+	1    6450 1750
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

@@ -172,7 +172,7 @@ U 1 1 5BFB240C
 P 7050 4450
 F 0 "J22" H 7078 4476 50  0000 L CNN
 F 1 "standoff_1" H 7078 4385 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 7050 4450 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad" H 7050 4450 50  0001 C CNN
 F 3 "~" H 7050 4450 50  0001 C CNN
 	1    7050 4450
 	1    0    0    -1  
@@ -183,7 +183,7 @@ U 1 1 5BFB243C
 P 7050 4850
 F 0 "J23" H 7078 4876 50  0000 L CNN
 F 1 "standoff_2" H 7078 4785 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 7050 4850 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad" H 7050 4850 50  0001 C CNN
 F 3 "~" H 7050 4850 50  0001 C CNN
 	1    7050 4850
 	1    0    0    -1  
@@ -194,7 +194,7 @@ U 1 1 5BFB245E
 P 8100 4750
 F 0 "J24" H 8128 4776 50  0000 L CNN
 F 1 "standoff_3" H 8128 4685 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 8100 4750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad" H 8100 4750 50  0001 C CNN
 F 3 "~" H 8100 4750 50  0001 C CNN
 	1    8100 4750
 	1    0    0    -1  
@@ -205,7 +205,7 @@ U 1 1 5BFB249E
 P 8150 4300
 F 0 "J25" H 8178 4326 50  0000 L CNN
 F 1 "standoff_4" H 8178 4235 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 8150 4300 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad" H 8150 4300 50  0001 C CNN
 F 3 "~" H 8150 4300 50  0001 C CNN
 	1    8150 4300
 	1    0    0    -1  
