@@ -356,4 +356,16 @@ F 3 "~" H 6450 1750 50  0001 C CNN
 	1    6450 1750
 	0    -1   -1   0   
 $EndComp
+$Comp
+L power:+8V #PWR?
+U 1 1 5C152108
+P 2050 1950
+F 0 "#PWR?" H 2050 1920 20  0001 C CNN
+F 1 "+8V" H 2050 2087 30  0000 C CNN
+F 2 "" H 2050 1950 50  0001 C CNN
+F 3 "" H 2050 1950 50  0001 C CNN
+	1    2050 1950
+	-1   0    0    1   
+$EndComp
+Connection ~ 2050 1950
 $EndSCHEMATC

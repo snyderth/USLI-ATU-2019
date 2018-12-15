@@ -751,4 +751,16 @@ Connection ~ 7700 4550
 Connection ~ 7600 4550
 Wire Wire Line
 	7700 4250 7700 4150
+$Comp
+L power:+8V #PWR?
+U 1 1 5C152AAC
+P 1650 5100
+F 0 "#PWR?" H 1650 5070 20  0001 C CNN
+F 1 "+8V" H 1650 5237 30  0000 C CNN
+F 2 "" H 1650 5100 50  0001 C CNN
+F 3 "" H 1650 5100 50  0001 C CNN
+	1    1650 5100
+	-1   0    0    1   
+$EndComp
+Connection ~ 1650 5100
 $EndSCHEMATC

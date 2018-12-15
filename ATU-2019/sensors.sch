@@ -878,4 +878,16 @@ F 3 "~" H 800 5400 50  0001 C CNN
 	1    800  5400
 	-1   0    0    1   
 $EndComp
+$Comp
+L power:+8V #PWR0125
+U 1 1 5C14D3E8
+P 5400 3100
+F 0 "#PWR0125" H 5400 3070 20  0001 C CNN
+F 1 "+8V" H 5400 3237 30  0000 C CNN
+F 2 "" H 5400 3100 50  0001 C CNN
+F 3 "" H 5400 3100 50  0001 C CNN
+	1    5400 3100
+	-1   0    0    1   
+$EndComp
+Connection ~ 5400 3100
 $EndSCHEMATC
