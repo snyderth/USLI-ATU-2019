@@ -33,7 +33,7 @@ uC_11_MOSI0
 Text GLabel 1950 2900 0    50   Input ~ 0
 uC_12_MISO0
 Text GLabel 1950 3000 0    50   Input ~ 0
-uC_3V3_OUT
+uC_3V3_OUT_1
 Text GLabel 1950 3100 0    50   Input ~ 0
 uC_24_DIO
 Text GLabel 1950 3300 0    50   Input ~ 0
@@ -71,7 +71,7 @@ F 3 "~" H 2700 2800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 2900 1600 2    50   Input ~ 0
-uC_5Vin
+uC_PWR
 Text GLabel 2900 1700 2    50   Input ~ 0
 AGND
 Text GLabel 2900 2100 2    50   Input ~ 0
@@ -252,7 +252,7 @@ Text GLabel 5500 2250 0    50   Input ~ 0
 uC_gps_RX
 Text GLabel 5500 2350 0    50   Input ~ 0
 uC_gps_TX
-Text GLabel 8100 4550 2    50   Input ~ 0
+Text GLabel 8550 4550 2    50   Input ~ 0
 uC_5Vin
 $Comp
 L Regulator_Linear:LM1085-5.0 U1
@@ -329,8 +329,6 @@ Text GLabel 2900 3600 2    50   Input ~ 0
 uC_433_reset
 Text GLabel 1950 2300 0    50   Input ~ 0
 uC_6_pwm
-Wire Wire Line
-	8100 4550 7950 4550
 $Comp
 L Device:R_US R12
 U 1 1 5BF159B7
@@ -566,10 +564,6 @@ Text GLabel 5150 4150 0    50   Input ~ 0
 uC_33-A14-CAN1TX-SCL0-TX5
 Wire Wire Line
 	5150 4150 5500 4150
-Text GLabel 5250 4050 0    50   Input ~ 0
-uC_433_reset
-Wire Wire Line
-	5250 4050 5500 4050
 Wire Wire Line
 	1800 1600 1850 1600
 Wire Wire Line
@@ -607,7 +601,7 @@ uC_11_MOSI0
 Text GLabel 5500 2550 0    50   Input ~ 0
 uC_12_MISO0
 Text GLabel 4800 2650 0    50   Input ~ 0
-uC_3V3_OUT
+uC_3V3_OUT_1
 Text GLabel 5500 2750 0    50   Input ~ 0
 uC_24_DIO
 Text GLabel 5500 2950 0    50   Input ~ 0
@@ -618,7 +612,7 @@ Text GLabel 5500 3250 0    50   Input ~ 0
 uC_29_CAN0TX
 Text GLabel 5500 3350 0    50   Input ~ 0
 uC_30_CAN0RX
-Text GLabel 8100 4650 2    50   Input ~ 0
+Text GLabel 8100 4700 2    50   Input ~ 0
 AGND
 Wire Wire Line
 	7500 4650 8000 4650
@@ -626,7 +620,7 @@ Wire Wire Line
 	8000 4650 8000 4800
 Connection ~ 8000 4650
 Wire Wire Line
-	8000 4650 8100 4650
+	8000 4650 8050 4650
 Text GLabel 7500 5050 2    50   Input ~ 0
 uC_21-A6-CS0-MOSI1-rx1
 Text GLabel 7500 5450 2    50   Input ~ 0
@@ -752,10 +746,10 @@ Connection ~ 7600 4550
 Wire Wire Line
 	7700 4250 7700 4150
 $Comp
-L power:+8V #PWR?
+L power:+8V #PWR0122
 U 1 1 5C152AAC
 P 1650 5100
-F 0 "#PWR?" H 1650 5070 20  0001 C CNN
+F 0 "#PWR0122" H 1650 5070 20  0001 C CNN
 F 1 "+8V" H 1650 5237 30  0000 C CNN
 F 2 "" H 1650 5100 50  0001 C CNN
 F 3 "" H 1650 5100 50  0001 C CNN
@@ -763,4 +757,19 @@ F 3 "" H 1650 5100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 1650 5100
+NoConn ~ 5500 4050
+Wire Wire Line
+	7950 4550 8550 4550
+Wire Wire Line
+	8050 4650 8100 4700
+Text GLabel 8550 4650 2    50   Input ~ 0
+uC_PWR
+Wire Wire Line
+	8550 4650 8450 4650
+Wire Wire Line
+	8450 4650 8450 4600
+Wire Wire Line
+	8450 4600 7700 4600
+Wire Wire Line
+	7700 4600 7700 4550
 $EndSCHEMATC
