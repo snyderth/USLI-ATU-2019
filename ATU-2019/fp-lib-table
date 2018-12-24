@@ -15,4 +15,5 @@
   (lib (name BNO)(type KiCad)(uri /home/thomas/KicadProjects/USLI/IMU/BNO.pretty)(options "")(descr ""))
   (lib (name digikey-footprints)(type KiCad)(uri /home/thomas/KicadProjects/USLI/XBEE/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
   (lib (name ATU-2019)(type KiCad)(uri /home/thomas/KicadProjects/USLI/ATU-2019)(options "")(descr ""))
+  (lib (name Graphics)(type KiCad)(uri /home/thomas/KicadProjects/USLI/Graphics)(options "")(descr ""))
 )
