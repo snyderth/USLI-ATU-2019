@@ -290,16 +290,7 @@ Text GLabel 1650 4900 1    50   Input ~ 0
 PRESSURE_VCC
 Text GLabel 1650 5950 3    50   Input ~ 0
 PRESSURE_VCC
-Wire Wire Line
-	6000 3100 6150 3100
 Connection ~ 6000 3100
-Wire Wire Line
-	6150 3100 6150 2950
-Connection ~ 6150 3100
-Wire Wire Line
-	6150 3100 6300 3100
-Text GLabel 6150 2950 1    50   Input ~ 0
-FT231X_VCC
 Text GLabel 10100 1200 2    50   Input ~ 0
 Sensor_VCC
 $Comp
@@ -890,4 +881,6 @@ F 3 "" H 5400 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 5400 3100
+Wire Wire Line
+	6000 3100 6300 3100
 $EndSCHEMATC
